@@ -1,0 +1,14 @@
+---
+layout: default
+title: Articles
+---
+<h1>Articles</h1>
+
+<ul>
+  {% for doc in site.docs %}
+    <li>
+      <h2 class="page-title"><a href="{{ doc.url }}">{{ doc.title }}</a></h2>
+      <p class="excerpt">{{ doc.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>

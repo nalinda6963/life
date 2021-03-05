@@ -1,0 +1,39 @@
+asciidoc: {}
+
+asciidoctor:
+  attributes:
+    - stem
+  base_dir: :docdir
+  imagesdir: /images
+  safe: unsafe
+
+collections:
+  docs:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "docs"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude:
+  - LICENSE.adoc
+  - README.adoc
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - .jekyll-cache
+
+keep_files:
+  - images

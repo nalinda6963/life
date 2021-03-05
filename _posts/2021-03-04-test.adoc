@@ -1,0 +1,115 @@
+= First Entry
+:page-excerpt: This is an attempt to test the use of asciidocs
+:page-author: Isuru
+:page-revdate: 2016-03-20 10:30:00 -0600
+:page-categories: [jekyll, asciidoc]
+:toc: 
+:sectanchors:
+:sectlinks:
+// :toclevels: 1
+
+== Example entry
+
+Cura is a free slicing software. Besides the fact this is free, Cura is one of the best slicing software options in the industry. It is necessary to have the right profile, matching your printer, loaded to get the best printing experience. The latest version of cura can be downloaded from https://ultimaker.com/software/ultimaker-cura[here].
+
+== Test level 2 title
+Cura is a free slicing software. Besides the fact this is free, Cura is one of the best slicing software options in the industry. It is necessary to have the right profile, matching your printer, loaded to get the best printing experience. The latest version of cura can be downloaded from https://ultimaker.com/software/ultimaker-cura[here].
+
+=== Test level 3 title
+Cura is a free slicing software. Besides the fact this is free, Cura is one of the best slicing software options in the industry. It is necessary to have the right profile, matching your printer, loaded to get the best printing experience. The latest version of cura can be downloaded from https://ultimaker.com/software/ultimaker-cura[here].
+
+[plantuml, plantuml-example-2, svg]
+----
+class Dummy {
+ -field1
+ #field2
+ ~method1()
+ +method2()
+}
+----
+
+[plantuml, test-1, svg]
+----
+start
+:Hello world;
+:This is defined on
+several **lines**;
+stop
+----
+
+[plantuml, test-2, svg]
+----
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: Another authentication Response
+----
+
+[plantuml, test-3, svg]
+----
+Alice -> Bob: Authentication Request
+Bob -> Alice: Authentication Failure
+group My own label [My own label 2]
+    Alice -> Log : Log attack start
+    loop 1000 times
+        Alice -> Bob: DNS Attack
+    end
+    Alice -> Log : Log attack end
+end
+----
+
+[ditaa, ascii-diagram, svg]
+----
++--------+   +-------+    +-------+
+|        +---+ ditaa +--> |       |
+|  Text  |   +-------+    |diagram|
+|Document|   |!magic!|    |       |
+|     {d}|   |       |    |       |
++---+----+   +-------+    +-------+
+    :                         ^
+    |       Lots of work      |
+    +-------------------------+
+----
+
+[graphviz, node-diagram, png]
+----
+digraph foo {
+  node [style=rounded]
+  node1 [shape=box]
+  node2 [fillcolor=yellow, style="rounded,filled", shape=diamond]
+  node3 [shape=record, label="{ a | b | c }"]
+
+  node1 -> node2 -> node3
+}
+----
+
+[graphviz, cyclic, png]
+----
+digraph g {
+    a -> b
+    b -> c
+    c -> d
+    d -> a
+}
+----
+
+[ditaa, memory, png]
+----
+
+      +--------+
+   0  |        |  <- start
+      +--------+
+   1  |        |  <- q  scans from start to end
+      +--------+
+      :  ..... |
+      +--------+
+      |        |  <- end
+      +--------+  <-+
+      |        |    |
+      +--------+    | rest of the
+      :  ..... |    | allocated memory
+      +--------+    |
+  n   |        |    |
+      +--------+  <-+
+----
