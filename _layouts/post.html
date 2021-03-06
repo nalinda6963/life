@@ -2,7 +2,7 @@
 layout: default
 ---
 <h1 class="page-title">{{ page.title }}</h1>
-<p class="audit-tags">{{ page.date | date_to_string }} - {{ page.author }} {% if page.revdate %} - Revised:  {{ page.revdate }} {% endif %}</p>
+<p class="audit-tags">{{ page.date | date_to_string }} | {{ page.author }} {% if page.revdate %} | Revised:  {{ page.revdate }} {% endif %}</p>
 
     <!-- Main Blog Content -->
     <div class="large-9 columns" role="content">

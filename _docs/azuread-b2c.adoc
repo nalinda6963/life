@@ -1,0 +1,25 @@
+:page-excerpt: This is an attempt to test the use of asciidocs
+:page-author: Isuru
+:page-created_date: 2021-03-06 06:20:00 -0500
+:page-categories: [jekyll, asciidoc]
+:toc:
+:sectanchors:
+:sectlinks:
+:imagesdir: images
+
+= AzureB2C
+
+<<<
+
+AzureB2C is a modern Identity Management Service (`IMS`), which could also act as an Identity Provider (`IdP`). B2C is capable of facilitating social identities, unified identities which can be used for single sign on (`SSO`) to multiple applications. The capability that B2C has to plugin external IDP services makes its a `IMS`.
+
+image::https://docs.microsoft.com/en-us/azure/active-directory-b2c/media/overview/azureadb2c-overview.png[caption="B2C.",title="MS B2C Overview"]
+
+== AzureB2C vs AureB2B
+
+<<<
+
+AzureB2B is used when a third party user required access to your internal resources. As an example, if the members of staffing firm that you use to hire talent, require access to the organizations email account and a calendar to facilitate the talent acquisition process, you can use AzureB2B to authenticate the staffing agancy members with `SSO` against their `IdP`. Furthermore, you can add them to your active directory and provide necessary access to internal resources. One of the key information here is AzureB2B is using the same directory as the internal organization.
+
+On the other hand, AzureB2C is on a separate directory and is your customer space. Customers can use their social or work identities (if authorized by his/ her organization) can be used to login to customer applications in your organization, you can decide and control which types of identities that your customers are allowed to use.Finally, Even though B2C is in a separate directory, you can still use it to allow access to your internal resources, so in a nutshell, you can set up only a B2C tenant and cover both B2B and B2C scenarios (`social identities` and `Organizations resource access`). The decision is up to you.
+
