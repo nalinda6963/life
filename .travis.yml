@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+  - 3.0
+sudo: false
+script: bundle exec jekyll build && bundle exec rake deploy
+addons:
+  apt:
+    packages:
+      - graphviz
+env:
+  global:
+    - secure: KCKGX1sI5RYyjXlMt2XmOeCfl00caZc58lXtLI/fp8v2lwLSgL35itRCH0AwYqnUOZWn+YN+dOwIrvgOktWBYWHCeeBVIlaf/PBbR+c7yvuW8zfYJgGlWMx5XExbGAZuUwgjlL11JNosl3Z47sispvl13jhVotSXgTu4y1wA4nYcrvRpk9F8CHzX5Z52bNeY1yasnXYdnChF9ddC9b5ihpYDoYL7L4YrQxnb4wW2qEGcYycs8cbBd3YCrf7PovOotZeOiejt0vYveijBjRaId6Yl76c55Jp0gB5rbsmA/1PoDLPvDTPdcT15fbiB9Uibyr2PUO9oLbrNc8yj7F8Y2J2bsEQvfFIZ5f1JgXZW5VfCuivvzYskEH0cC8r0VYqqhWC2tyMEYEnKZAPrtRonZAO701FIxe97okhuoGAbo5Fgxp/tL5xpzTN86O8rUp4BJuTJ3r+qp7DrLRKmNDtAZKnnANEw/wqh+5gfaqAqCtzZQ0vwtERtgtpQ0maowTrV/XGcr4QSvdebTGTX9Dl6RkifSjmsJFQLVxmRBstBYgYV0xG++81mmsxMdD2yBgnUqaZcUt7aEYSmsmqYDIo5UeJPfCscUBQNyCJfFL9WjNT9drIh4USL6RD0XDuCX/V7rJEtsXxYZhqZ7DmSMp06eyoCB+rr6CeePh9QHGZ4Sbo=

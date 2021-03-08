@@ -15,7 +15,7 @@ AzureB2C is a modern Identity Management Service (`IMS`), which could also act a
 
 image::https://docs.microsoft.com/en-us/azure/active-directory-b2c/media/overview/azureadb2c-overview.png[caption="B2C.",title="MS B2C Overview"]
 
-== AzureB2C vs AureB2B
+== AzureB2C vs AzureB2B
 
 <<<
 
