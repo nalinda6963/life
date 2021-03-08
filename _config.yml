@@ -38,4 +38,4 @@ exclude:
 keep_files:
   - images
 
-theme: jekyll-theme-hacker
+#theme: jekyll-theme-hacker
