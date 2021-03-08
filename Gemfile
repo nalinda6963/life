@@ -6,6 +6,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem 'jekyll', '~> 4.2'
 gem 'asciidoctor', '~> 2.0'
+gem 'rake-jekyll', '~> 1.1'
 gem 'jekyll-plantuml', '~> 1.3' 
 
 group :jekyll_plugins do
