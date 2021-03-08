@@ -37,3 +37,5 @@ exclude:
 
 keep_files:
   - images
+
+theme: jekyll-theme-hacker
