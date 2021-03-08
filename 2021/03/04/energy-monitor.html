@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Energy Monitor</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <nav class="navigation">
+    
+      <a href="/" >
+        Home
+      </a>
+    
+      <a href="/about.html" >
+        About
+      </a>
+    
+      <a href="/blog.html" >
+        Blog
+      </a>
+    
+      <a href="/articles.html" >
+        Articles
+      </a>
+    
+</nav>
+    <h1 class="page-title">Energy Monitor</h1>
+<p class="audit-tags">04 Mar 2021 | Isuru </p>
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+        <h1 id="energy-monitor-setup">Energy Monitor Setup</h1>
+<p>This monitoring system is current transformation (<code class="language-plaintext highlighter-rouge">CT</code>) clamp based implementation. CT technology is based on <code class="language-plaintext highlighter-rouge">Faraday</code> (Feh.ruh.dei) law (Same theory behind the generator).</p>
+
+<h2 id="what-have-i-used-in-this-setup">What have I used in this setup</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- CircuitSetUp
+    - Open source (Crowd funded June 2019)
+    - Number of communication protocols 
+        i) Wifi 
+        ii) 3G 
+        iii) BLE
+        iv) LoRa (Low powered wide area network)
+
+    - Accuracy and the ability to measure mA level usages
+        - Used one of the powerful energy metering chic is made by Microchip now Atmel
+
+- ESP32 As the communicator between the chip and the server
+
+- Home Assistant (Data storage and visualizer)
+    - Open source
+    - Very powerful
+        - Visualization
+            i) Grafana
+            ii) InfluxDB
+</code></pre></div></div>
+
+<h2 id="current-abilities">Current Abilities</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Monitor and capture energy usage at the breaker level
+</code></pre></div></div>
+
+<h2 id="future-enhancements">Future Enhancements</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- ML model to read the energy signature and identify individual equipments
+    EX: Use cases: Home energy report will be more accurate
+
+- Predictive Analytics to provide equipment working condition to the customers
+    Ex: 
+    * Identify issues earlier and save unnecessary expensive service and replacement cost
+    * Promote equipment better serve individual customer usage and matches the home energy profile (Cost efficiency of going for most energy efficient vs what best for them based on the usage)
+</code></pre></div></div>
+
+<h2 id="how-does-the-setup-looks-like">How does the setup looks like</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- This is how the CT installation looks like (@@ToDo::details instructions to come)
+
+
+- This is how the circuit board setup looks like  (@@ToDo::details instructions to come)
+</code></pre></div></div>
+
+<h2 id="enclosure">Enclosure</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- The stl file to enclose this product is under `../3dprinting/stl-files/energy-monitor-case.stl`
+</code></pre></div></div>
+
+<pre><code class="language-plantuml">@startuml
+:Main Admin: as Admin
+(Use the application) as (Use)
+
+User -&gt; (Start)
+User --&gt; (Use)
+
+Admin ---&gt; (Use)
+
+note right of Admin : This is an example.
+
+note right of (Use)
+  A note can also
+  be on several lines
+end note
+
+note "This note is connected\nto several objects." as N2
+(Start) .. N2
+N2 .. (Use)
+@enduml
+</code></pre>
+
+    </div>
+
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+
+    <aside class="large-3 columns">
+        <h4>Posts</h4>
+        <ul id="posts" class="posts nav">
+            
+            <li><a href="/jekyll/asciidoc/2021/03/04/test.html"></a></li>
+            
+            <li><a href="/2021/03/04/energy-monitor.html"></a></li>
+            
+            <li><a href="/2021/03/03/kiwifruit.html"></a></li>
+            
+            <li><a href="/2021/03/03/apples.html"></a></li>
+            
+        </ul>
+    </aside>
+
+    <!-- End Sidebar -->
+
+  </body>
+</html>

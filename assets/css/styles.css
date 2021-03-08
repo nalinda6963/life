@@ -1,0 +1,19 @@
+.navigation { font-size: 18px; margin-left: 5px; margin-right: 5px; }
+
+.current { color: green; font-size: 20px; zoom: 2; margin-left: 10px; margin-right: 10px; }
+
+.page-title { color: #008000; margin-bottom: 0%; }
+
+.audit-tags { color: blue; font-size: 12px; margin-top: 0%; }
+
+.excerpt { margin-top: 0%; }
+
+.anchor { position: absolute; z-index: 1001; width: 1.5ex; margin-left: -1.5ex; display: block; text-decoration: none !important; text-align: center; font-weight: normal; }
+
+.anchor:before { content: "\00A7"; font-size: 0.85em; display: block; padding-top: 0.1em; }
+
+.anchor:hover > anchor, .anchor > anchor:hover { visibility: visible; }
+
+.anchor > a.link { text-decoration: none; }
+
+/*# sourceMappingURL=styles.css.map */
