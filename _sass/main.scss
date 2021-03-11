@@ -26,34 +26,6 @@
     margin-top: 0%;
 }
 
-.anchor {
-    position: absolute;
-    z-index: 1001;
-    // 1ex is the width of one "x"
-    width: 1.5ex;
-    margin-left: -1.5ex;
-    display: block;
-    text-decoration: none !important;
-    //visibility: hidden;
-    text-align: center;
-    font-weight: normal;
-    &:before {
-        content: "\00A7";
-        font-size: 0.85em;
-        display: block;
-        // padding-top highly dependent on font
-        padding-top: 0.1em;
-    }
-    &:hover > anchor,
-    & > anchor:hover {
-        visibility: visible;
-    }
-
-    & > a.link {
-        //color: $header-font-color;
-        text-decoration: none;
-        &:hover {
-            //color: darken($header-font-color, 5%);
-        }
-    }
+.body {
+    margin-left: 10px;
 }

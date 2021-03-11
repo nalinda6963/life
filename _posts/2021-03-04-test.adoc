@@ -1,12 +1,12 @@
 = First Entry
+:imagesdir: images
 :page-excerpt: This is an attempt to test the use of asciidocs
 :page-author: Isuru
-:page-revdate: 2016-03-20 10:30:00 -0600
+:page-revdate: 2021-03-04 10:30:00 -0500
 :page-categories: [jekyll, asciidoc]
-:toc: 
 :sectanchors:
 :sectlinks:
-// :toclevels: 1
+:toc:
 
 == Example entry
 

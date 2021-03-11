@@ -1,0 +1,109 @@
+= The Value of JetBrains Products
+:imagesdir: images
+:page-excerpt: This is an attempt to justify the use of JetBrains products with in the company with the EA approval.
+:page-author: Isuru
+:page-revdate: 2021-03-11 11:30:00 -0500
+:page-categories: [jekyll, asciidoc]
+:sectanchors:
+:sectlinks:
+:toc: 
+
+== Who is JetBrains?
+
+JetBrains is a company, which produces the best Integrated Development Environments (IDEs) available in the market for many languages, including Java, Python, and C#. Also, JetBrains suite has the following products, which are equally good and performing: 
+
+* IntelliJ IDEA
+** Java
+** Kotlin
+** Groovy
+* Rider
+** .NET
+** C#
+** ASP.NET
+* PyCharm
+** Python
+** Django
+** Data Science
+* WebStorm
+** JavaScript, TypeScript
+** Angular
+** React
+* DataGrip
+** SQL
+** Databases
+* AppCode
+** Swift, Obj-C
+** iOS, macOS
+** C/ C++
+* CLion
+** C/ C++
+** Embedded
+** Rust
+* GoLand
+** Go
+** JavaScript, TypeScript
+** SQL
+* RubyMine
+** Ruby, Rails
+** JavaScript, TypeScript
+** SQL
+
+== What value do JetBrains products provide?
+
+JetBrains IDEs are entirely focused on productivity, performance, and the developer experience.
+
+
+**Productivity:** 
+
+* Industry-leading IntelliSense capability
+* The best debugging experience
+* Access to any library implementation to verify and comply with the contracts
+** Easy navigation within the implementation and to and out of libraries
+* Easy access to linting and security tools
+* Re-factoring and formatting the code base is extremely easy with JetBrains products (very painful with other IDEs)
+* Seamless git integration (painful on other IDEs)
+
+**Performance:** 
+
+* Great support in debugging, testing (unit tests and API test), and performance analysis
+** In addition to the local debugging, remote debugging can easily be setup
+* DataGrip has a good SQL performance analysis capability
+* `IDE` it self performs well, and the failure/ crash rate is extremely low
+* Smart suggestions to improve performance and the quality of the codebase
+
+**Experience:**
+
+* JetBrains develop and support a significant number of plugins to enhance the developer experience and productivity. In addition to its plugins, JetBrains has the marketplace for community plugins, which JetBrains still controls the quality of implementation.
+* Extremely easy to upgrade the product
+* It is easy to set up and, once set up, little to no time necessary for ongoing configurations/ IDE trouble shootings.
+
+== Conclusion
+
+Based on the gap between the JetBrains products' value and what is out there in the market, spending $500 Per Annum on the JetBrains All Products pack is money well spent. A developer spending 4 hours troubleshooting IDE issues will cover the cost (which happens a lot with other IDEs).
+
+
+**Note:** 
+
+* Please visit this https://www.jetbrains.com/company/customers/testimonials.html[page] to see the testimonials to the above capabilities of JetBrains
+* The following is the partial list of DBs supported by `DataGrip`
+** MS SQL Server
+** Amazon RedShift
+** Apache Cassandra
+** Apache Derby
+** Apache Hive
+** Azure SQL DB
+** ClickHouse
+** Couchbase Query
+** IBM DB2
+** MongoDB
+** MariaDB 
+** MySQL
+** Oracle
+** PostgreSQL
+** ... the list goes on
+
+
+
+
+
+
