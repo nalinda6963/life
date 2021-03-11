@@ -4,8 +4,7 @@ author: Isuru
 title: Energy Monitor
 toc:
 excerpt: This monitoring system is current transformation (`CT`) clamp based implementation. CT technology is based on `Faraday` (Feh.ruh.dei) law (Same theory behind the generator).
-# sectanchors:
-sectlinks:
+navtitle: Energy Monitor
 ---
 
 # Energy Monitor Setup

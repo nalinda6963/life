@@ -4,6 +4,7 @@
 :page-author: Isuru
 :page-revdate: 2021-03-04 10:30:00 -0500
 :page-categories: [jekyll, asciidoc]
+:page-navtitle: Test Doc
 :sectanchors:
 :sectlinks:
 :toc:
@@ -94,7 +95,7 @@ digraph g {
 }
 ----
 
-[ditaa, memory, png]
+[ditaa, memory, svg]
 ----
 
       +--------+

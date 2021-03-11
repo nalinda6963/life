@@ -2,6 +2,7 @@
 :page-author: Isuru
 :page-created_date: 2021-03-06 06:20:00 -0500
 :page-categories: [jekyll, asciidoc]
+:page-navtitle: Azure B2C
 :toc:
 :sectanchors:
 :sectlinks:

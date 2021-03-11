@@ -4,6 +4,7 @@
 :page-author: Isuru
 :page-revdate: 2021-03-11 11:30:00 -0500
 :page-categories: [jekyll, asciidoc]
+:page-navtitle: JetBrains IDEs
 :sectanchors:
 :sectlinks:
 :toc: 
