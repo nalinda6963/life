@@ -4,7 +4,7 @@
     <title>Life</title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2021-03-16T01:14:46+00:00</updated>
+    <updated>2021-03-16T19:57:20+00:00</updated>
     <id></id>
     <author>
         <name>Isuru Wijesundara</name>
@@ -13,10 +13,10 @@
 
     
     <entry>
-        <title>The Value Of Jetbrains Products</title>
-        <link href="/jekyll/asciidoc/2021/03/10/the-value-of-jetbrains-products/"/>
+        <title>The Value of Jetbrains Products</title>
+        <link href="/2021/03/10/the-value-of-jetbrains-products/"/>
         <updated>2021-03-10T00:00:00+00:00</updated>
-        <id>/jekyll/asciidoc/2021/03/10/the-value-of-jetbrains-products</id>
+        <id>/2021/03/10/the-value-of-jetbrains-products</id>
         <content type="html">&lt;div id=&quot;toc&quot; class=&quot;toc&quot;&gt;
 &lt;div id=&quot;toctitle&quot;&gt;Table of Contents&lt;/div&gt;
 &lt;ul class=&quot;sectlevel1&quot;&gt;
@@ -333,10 +333,10 @@
     </entry>
     
     <entry>
-        <title>Test</title>
-        <link href="/jekyll/asciidoc/2021/03/04/test/"/>
+        <title>The Value of Jetbrains Products</title>
+        <link href="/2021/03/04/test/"/>
         <updated>2021-03-04T00:00:00+00:00</updated>
-        <id>/jekyll/asciidoc/2021/03/04/test</id>
+        <id>/2021/03/04/test</id>
         <content type="html">&lt;div id=&quot;toc&quot; class=&quot;toc&quot;&gt;
 &lt;div id=&quot;toctitle&quot;&gt;Table of Contents&lt;/div&gt;
 &lt;ul class=&quot;sectlevel1&quot;&gt;
@@ -497,7 +497,7 @@ N2 .. (Use)
     </entry>
     
     <entry>
-        <title>Kiwifruit</title>
+        <title>Kiwi Fruit</title>
         <link href="/2021/03/03/kiwifruit/"/>
         <updated>2021-03-03T00:00:00+00:00</updated>
         <id>/2021/03/03/kiwifruit</id>
