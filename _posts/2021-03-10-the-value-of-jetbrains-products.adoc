@@ -1,9 +1,9 @@
 :imagesdir: images
 :page-excerpt: This is an attempt to justify the use of JetBrains products with in the company with the EA approval.
-:page-author: Isuru
 :page-created-date: 2021-03-11
-:page-categories: [jekyll, asciidoc]
 :page-doctype: article
+:page-title: The Value of Jetbrains Products
+:page-tags: [JetBrains, IntelliJ, PyCharm, WebStorm, DataGrip]
 :sectanchors:
 :sectlinks:
 :toc:

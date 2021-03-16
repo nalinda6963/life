@@ -1,9 +1,9 @@
 :imagesdir: images
 :page-excerpt: macOS xrun error: invalid active developer path
-:page-author: Isuru W.
 :page-created-date: 2021-03-15
-:page-categories: [jekyll, asciidoc]
 :page-doctype: article
+:page-title: macOS Xcode Issue
+:page-tags: [macOS, Xcode, xrun_error]
 :sectanchors:
 :sectlinks:
 :toc:

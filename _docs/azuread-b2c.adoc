@@ -1,15 +1,14 @@
 :imagesdir: images
 :page-excerpt: This is an attempt to test the use of asciidocs
-:page-author: Isuru
 :page-created-date: 2021-03-06
-:page-categories: [jekyll, asciidoc]
 :page-doctype: article
 :page-title: AzureAd B2C
+:page-tags: [azure, azureAD, b2c]
 :sectanchors:
 :sectlinks:
 :toc:
 
-= AzureB2C
+= AzureAD B2C
 
 <<<
 

@@ -1,9 +1,9 @@
 :imagesdir: images
 :page-excerpt: This is an attempt to test the use of asciidocs
-:page-author: Isuru
 :page-created-date: 2021-03-04
-:page-categories: [jekyll, asciidoc]
 :page-doctype: article
+:page-title: The Value of Jetbrains Products
+:page-tags: [test tag with spaces, test_tag_no_spaces, JetBrains, IntelliJ, PyCharm, WebStorm, DataGrip]
 :sectanchors:
 :sectlinks:
 :toc:

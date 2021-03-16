@@ -1,0 +1,36 @@
+:imagesdir: images
+:page-excerpt: This should be the short summary of
+:page-author: Isuru W.
+// The `page-author` attribute is now setup at the _config.yml for each document type. Use the attribute in the document attributes only if you want to override.
+:page-created-date: 2021-03-06
+// With this custom attribute the created date will not be overridden by the page.date. This has to be manually set at the publishing.
+:page-categories: [tech]
+// Use of categories attribute will create a separate document directory in the _site (in this case a `tech` directory). Since the categories handles via jekyll configurations do not set this attribute.
+:page-doctype: article
+:page-title: Article Title
+// This tag will prevent the jekyll pull the title out of the file name. This will avoid auto changes of certain words with incorrect capitalization. Ex: macOS should not be MacOs
+:page-tags: [azure, azureAD, b2c, macOS]
+:sectanchors:
+// This attribute generates the anchors for the section headings
+:sectlinks:
+// This attribute generates direct links for section headings
+:toc:
+// This attribute activates the `Table Of Content` using the section heading. You can define the number of nested headings to show with `toclevels` attribute.
+
+// Revised Date is pulled from the last modified data using the `jekyll-last-modified-at` plugin.
+
+
+There are more information on the https://github.com/asciidoctor/jekyll-asciidoc[jekyll asciidoc page]
+
+[source, asciidoc]
+----
+:imagesdir: images
+:page-excerpt: This is a short summary of the document, which will showcase under the title in some pages.
+:page-created-date: 2021-03-04
+:page-doctype: article
+:page-title: The Value of Jetbrains Products
+:page-tags: [test tag with spaces, test_tag_no_spaces, JetBrains, IntelliJ, PyCharm, WebStorm, DataGrip]
+:sectanchors:
+:sectlinks:
+:toc:
+----

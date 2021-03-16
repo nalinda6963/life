@@ -23,6 +23,8 @@ asciidoctor:
   safe: unsafe
 
 collections:
+  notes:
+    output: true
   docs:
     output: true
 
@@ -31,20 +33,24 @@ defaults:
       path: ""
       type: "notes"
     values:
+      author: "Isuru W."
       layout: "notes"
   - scope:
       path: ""
       type: "docs"
     values:
+      author: "Isuru W."
       layout: "docs"
   - scope:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      author: "Isuru W."
+      layout: "posts"
   - scope:
       path: ""
     values:
+      author: "Isuru W."
       layout: "default"
 
 exclude:
