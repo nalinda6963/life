@@ -4,6 +4,7 @@
 :page-created-date: 2021-03-06
 :page-categories: [jekyll, asciidoc]
 :page-doctype: article
+:page-title: AzureAd B2C
 :sectanchors:
 :sectlinks:
 :toc:
