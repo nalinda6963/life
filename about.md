@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: page
 title: About
 ---
-# {{ "About" | uppercase }}
-This page tells you a little bit about me.
+
+This page tells you a little about me.
+
+The theme used in this website is evolved on to of one of the most famous Jekyll themes [Lanyon](https://lanyon.getpoole.com/)

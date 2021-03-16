@@ -1,0 +1,9 @@
+<span class="reading-time">
+  {% assign wordCount = content | number_of_words %}
+  {% if wordCount < 360 %}
+    1 min to read
+  {% else %}
+    {{ wordCount | divided_by:180 }} mins to read
+  {% endif %}
+</span>
+

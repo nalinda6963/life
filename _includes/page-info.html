@@ -1,0 +1,9 @@
+<span class="post-date">
+    {{ page.created-date | date_to_string }}
+    |
+    {{ page.author }}
+    |
+    {% include read-time.html %}
+    |
+    Revised: {{ page.last_modified_at | date_to_string }}
+</span>

@@ -2,9 +2,7 @@
 layout: docs
 title: 3D Printer - Software Setup
 author: Isuru
-created_date: 08/01/2020
-modified_last: 03/04/2021
-modified_by: Isuru
+created-date: 08/01/2020
 excerpt: This document will provide the basic guidance on setting up a new machine to use for 3d printing related activities.
 navtitle: 3D Printer Setup
 ---

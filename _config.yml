@@ -1,3 +1,18 @@
+### Site Config
+title:               Life
+tagline:             'Life of a Techie'
+description:         'Notes, Lessons-learned, wisdom, travel, hobbies, sports and all other life experiences of a Husband, Father, and a Techie.'
+# comment the url for local developments
+#url:                  https://life.wijesundara.org
+###
+
+### About/contact
+author:
+  name:              Isuru Wijesundara
+  url:               https://twitter.com/nalinda6963
+  email:             isuru.wijesundara@wijesundara.org
+###
+
 asciidoc: {}
 
 asciidoctor:
@@ -12,6 +27,11 @@ collections:
     output: true
 
 defaults:
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "notes"
   - scope:
       path: ""
       type: "docs"
@@ -38,4 +58,15 @@ exclude:
 keep_files:
   - images
 
-#theme: jekyll-theme-hacker
+paginate: 5
+permalink: pretty
+
+version: 0.1.0
+
+### Plugins and configurations
+#plugins:
+#  - jekyll-last-modified-at
+#
+#last-modified-at:
+#  date-format: '%d-%b-%y'
+###

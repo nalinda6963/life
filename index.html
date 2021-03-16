@@ -2,4 +2,52 @@
 layout: default
 title: Home
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+
+<div class="posts">
+    {% for post in paginator.posts %}
+    <div class="post">
+        <h1 class="post-title">
+            <a href="{{ post.url | absolute_url }}">
+                {{ post.title }}
+            </a>
+        </h1>
+
+        <span class="post-date">
+            {{ post.created-date | date_to_string }}
+            |
+            {{ post.author }}
+            |
+            <span class="reading-time">
+              {% assign wordCount = content | number_of_words %}
+              {% if wordCount < 360 %}
+                1 min to read
+              {% else %}
+                {{ wordCount | divided_by:180 }} mins to read
+              {% endif %}
+            </span>
+            |
+            Revised: {{ post.last_modified_at | date_to_string }}
+        </span>
+
+        {{ post.excerpt }}
+    </div>
+    {% endfor %}
+</div>
+
+<div class="pagination">
+    {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
+    {% else %}
+    <span class="pagination-item older">Older</span>
+    {% endif %}
+    {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+    <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+    {% else %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+    {% endif %}
+    {% else %}
+    <span class="pagination-item newer">Newer</span>
+    {% endif %}
+</div>
+

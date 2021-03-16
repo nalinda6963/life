@@ -1,0 +1,64 @@
+:imagesdir: images
+:page-excerpt: macOS xrun error: invalid active developer path
+:page-author: Isuru W.
+:page-created-date: 2021-03-15
+:page-categories: [jekyll, asciidoc]
+:page-doctype: article
+:sectanchors:
+:sectlinks:
+:toc:
+
+= macOS xcode issue
+
+== The issue
+I was trying to run `gem install posix-spawn -v '0.3.15'`, and revieced the following issue.    
+
+[source, bash]
+----
+
+$ gem install posix-spawn -v '0.3.15'
+
+Building native extensions. This could take a while...
+ERROR:  Error installing posix-spawn:
+        ERROR: Failed to build gem native extension.
+
+    current directory: /usr/local/lib/ruby/gems/3.0.0/gems/posix-spawn-0.3.15/ext
+/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/3.0.0_1/lib/ruby/3.0.0 -r ./siteconf20210315-14687-nufxql.rb extconf.rb
+creating Makefile
+
+current directory: /usr/local/lib/ruby/gems/3.0.0/gems/posix-spawn-0.3.15/ext
+make "DESTDIR=" clean
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+current directory: /usr/local/lib/ruby/gems/3.0.0/gems/posix-spawn-0.3.15/ext
+make "DESTDIR="
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+make failed, exit code 1
+
+Gem files will remain installed in /usr/local/lib/ruby/gems/3.0.0/gems/posix-spawn-0.3.15 for inspection.
+Results logged to /usr/local/lib/ruby/gems/3.0.0/extensions/x86_64-darwin-20/3.0.0/posix-spawn-0.3.15/gem_make.out
+
+----
+
+Background:: 
+* I have been running `gem install` on this machine frequently without issues. 
+* I had `xcode` already installed.
+* I recently **installed an macOS update on the machine**
+
+== Root cause
+A quick Google search revealed that macOS updates could break the previosely installed `xcode`. 
+
+== The Fix
+There are 3 options to fix the issue and try in oder if the issue still exist after each action.
+
+. Re-install `xcode`
+[source, bash]
+$ xcode-select --install
+
+. Force reset `xcode` with `sudo`
+[source, bash]
+$ sudo xcode-select --reset
+    
+. Manually download `xcode` from https://developer.apple.com/xcode/[Apple developer]
+

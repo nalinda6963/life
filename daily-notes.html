@@ -1,14 +1,13 @@
 ---
 layout: page
-title: Blog
+title: Daily-Notes
 ---
-<h1>Latest Posts</h1>
 
 <ul>
-  {% for post in site.posts %}
+  {% for note in site.notes %}
     <li>
-      <h2 class="page-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="excerpt">{{ post.excerpt }}</p>
+      <h2 class="page-title"><a href="{{ note.url }}">{{ note.title }}</a></h2>
+      <p class="excerpt">{{ note.excerpt }}</p>
     </li>
   {% endfor %}
 </ul>

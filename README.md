@@ -1,2 +1,2 @@
 # Life
-Documentation of experiences, lessons learned, and activities
+Notes, Lessons-learned, wisdom, travel, hobbies, sports and all other life experiences of a Husband, Father, and a Techie.

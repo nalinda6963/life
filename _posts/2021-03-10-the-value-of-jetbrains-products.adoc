@@ -1,13 +1,14 @@
-= The Value of JetBrains Products
 :imagesdir: images
 :page-excerpt: This is an attempt to justify the use of JetBrains products with in the company with the EA approval.
 :page-author: Isuru
-:page-revdate: 2021-03-11 11:30:00 -0500
+:page-created-date: 2021-03-11
 :page-categories: [jekyll, asciidoc]
-:page-navtitle: JetBrains IDEs
+:page-doctype: article
 :sectanchors:
 :sectlinks:
-:toc: 
+:toc:
+
+= The Value of JetBrains Products
 
 == Who is JetBrains?
 

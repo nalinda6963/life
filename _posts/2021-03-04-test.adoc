@@ -1,13 +1,14 @@
-= First Entry
 :imagesdir: images
 :page-excerpt: This is an attempt to test the use of asciidocs
 :page-author: Isuru
-:page-revdate: 2021-03-04 10:30:00 -0500
+:page-created-date: 2021-03-04
 :page-categories: [jekyll, asciidoc]
-:page-navtitle: Test Doc
+:page-doctype: article
 :sectanchors:
 :sectlinks:
 :toc:
+
+= First Entry
 
 == Example entry
 
@@ -58,6 +59,23 @@ group My own label [My own label 2]
     end
     Alice -> Log : Log attack end
 end
+----
+
+[plantuml, simple-auth-flow, svg]
+----
+User -> Web_UI: access login
+Web_UI -> IDP: authentication request
+IDP -> IDP: validate the client
+IDP -> User: login page
+User -> IDP: username / password
+IDP -> IDP: authenticate user
+IDP -> Web_UI: redirect with the JWT token
+Web_UI -> API_Gateway: api call with JWT
+API_Gateway -> API_Gateway: validate token and claims
+API_Gateway -> IDP: validate token signature
+API_Gateway -> BackEnd: api call with JWT
+BackEnd -> BackEnd: validate claims
+BackEnd -> Web_UI: response
 ----
 
 [ditaa, ascii-diagram, svg]
