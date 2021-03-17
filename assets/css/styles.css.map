@@ -7,7 +7,7 @@
 	],
 	"sourcesContent": [
 		"@import \"main\";\n",
-		".navigation {\n    font-size: 18px;\n    margin-left: 5px;\n    margin-right: 5px;\n}\n.current  {\n    color: green;\n    font-size: 20px;\n    zoom: 2;\n    margin-left: 10px;\n    margin-right: 10px;\n}\n\n.page-title {\n    color: #008000;\n    margin-bottom: 0%;\n}\n\n.audit-tags {\n    color: blue;\n    font-size: 12px;\n    margin-top: 0%;\n}\n\n.excerpt {\n    margin-top: 0%;\n}\n\n.body {\n    margin-left: 10px;\n}\n"
+		".navigation {\n    font-size: 18px;\n    margin-left: 5px;\n    margin-right: 5px;\n}\n.current  {\n    color: green;\n    font-size: 20px;\n    zoom: 2;\n    margin-left: 10px;\n    margin-right: 10px;\n}\n\n.page-title {\n    color: #008000;\n    margin-bottom: 0%;\n}\n\n.audit-tags {\n    color: blue;\n    font-size: 12px;\n    margin-top: 0%;\n}\n\n.excerpt {\n    margin-top: 0%;\n}\n\n.body {\n    margin-left: 10px;\n}\n\n"
 	],
 	"names": [],
 	"mappings": "ACAA,AAAA,WAAW,CAAC,EACR,SAAS,EAAE,IAAI,EACf,WAAW,EAAE,GAAG,EAChB,YAAY,EAAE,GAAG,GACpB;;AACD,AAAA,QAAQ,CAAE,EACN,KAAK,EAAE,KAAK,EACZ,SAAS,EAAE,IAAI,EACf,IAAI,EAAE,CAAC,EACP,WAAW,EAAE,IAAI,EACjB,YAAY,EAAE,IAAI,GACrB;;AAED,AAAA,WAAW,CAAC,EACR,KAAK,EAAE,OAAO,EACd,aAAa,EAAE,EAAE,GACpB;;AAED,AAAA,WAAW,CAAC,EACR,KAAK,EAAE,IAAI,EACX,SAAS,EAAE,IAAI,EACf,UAAU,EAAE,EAAE,GACjB;;AAED,AAAA,QAAQ,CAAC,EACL,UAAU,EAAE,EAAE,GACjB;;AAED,AAAA,KAAK,CAAC,EACF,WAAW,EAAE,IAAI,GACpB"

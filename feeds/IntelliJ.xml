@@ -12,12 +12,13 @@
     </author>
 
     
-    <entry>
-        <title>The Value of Jetbrains Products</title>
-        <link href="/2021/03/10/the-value-of-jetbrains-products/"/>
-        <updated>2021-03-10T00:00:00+00:00</updated>
-        <id>/2021/03/10/the-value-of-jetbrains-products</id>
-        <content type="html">&lt;div id=&quot;toc&quot; class=&quot;toc&quot;&gt;
+        
+        <entry>
+            <title>The Value of Jetbrains Products</title>
+            <link href="/2021/03/10/the-value-of-jetbrains-products/"/>
+            <updated>2021-03-10T00:00:00+00:00</updated>
+            <id>/2021/03/10/the-value-of-jetbrains-products</id>
+            <content type="html">&lt;div id=&quot;toc&quot; class=&quot;toc&quot;&gt;
 &lt;div id=&quot;toctitle&quot;&gt;Table of Contents&lt;/div&gt;
 &lt;ul class=&quot;sectlevel1&quot;&gt;
 &lt;li&gt;&lt;a href=&quot;#who-is-jetbrains&quot;&gt;Who is JetBrains?&lt;/a&gt;&lt;/li&gt;
@@ -330,14 +331,16 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</content>
-    </entry>
+        </entry>
+        
     
-    <entry>
-        <title>Test Document</title>
-        <link href="/2021/03/04/test/"/>
-        <updated>2021-03-04T00:00:00+00:00</updated>
-        <id>/2021/03/04/test</id>
-        <content type="html">&lt;div id=&quot;toc&quot; class=&quot;toc&quot;&gt;
+        
+        <entry>
+            <title>Test Document</title>
+            <link href="/2021/03/04/test/"/>
+            <updated>2021-03-04T00:00:00+00:00</updated>
+            <id>/2021/03/04/test</id>
+            <content type="html">&lt;div id=&quot;toc&quot; class=&quot;toc&quot;&gt;
 &lt;div id=&quot;toctitle&quot;&gt;Table of Contents&lt;/div&gt;
 &lt;ul class=&quot;sectlevel1&quot;&gt;
 &lt;li&gt;&lt;a href=&quot;#example-entry&quot;&gt;Example entry&lt;/a&gt;&lt;/li&gt;
@@ -415,117 +418,14 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</content>
-    </entry>
+        </entry>
+        
     
-    <entry>
-        <title>Energy Monitor</title>
-        <link href="/2021/03/04/energy-monitor/"/>
-        <updated>2021-03-04T00:00:00+00:00</updated>
-        <id>/2021/03/04/energy-monitor</id>
-        <content type="html">&lt;h1 id=&quot;energy-monitor-setup&quot;&gt;Energy Monitor Setup&lt;/h1&gt;
-&lt;p&gt;This monitoring system is current transformation (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CT&lt;/code&gt;) clamp based implementation. CT technology is based on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Faraday&lt;/code&gt; (Feh.ruh.dei) law (Same theory behind the generator).&lt;/p&gt;
-
-&lt;h2 id=&quot;what-have-i-used-in-this-setup&quot;&gt;What have I used in this setup&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- CircuitSetUp
-    - Open source (Crowd funded June 2019)
-    - Number of communication protocols 
-        i) Wifi 
-        ii) 3G 
-        iii) BLE
-        iv) LoRa (Low powered wide area network)
-
-    - Accuracy and the ability to measure mA level usages
-        - Used one of the powerful energy metering chic is made by Microchip now Atmel
-
-- ESP32 As the communicator between the chip and the server
-
-- Home Assistant (Data storage and visualizer)
-    - Open source
-    - Very powerful
-        - Visualization
-            i) Grafana
-            ii) InfluxDB
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;current-abilities&quot;&gt;Current Abilities&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Monitor and capture energy usage at the breaker level
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;future-enhancements&quot;&gt;Future Enhancements&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- ML model to read the energy signature and identify individual equipments
-    EX: Use cases: Home energy report will be more accurate
-
-- Predictive Analytics to provide equipment working condition to the customers
-    Ex: 
-    * Identify issues earlier and save unnecessary expensive service and replacement cost
-    * Promote equipment better serve individual customer usage and matches the home energy profile (Cost efficiency of going for most energy efficient vs what best for them based on the usage)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;how-does-the-setup-looks-like&quot;&gt;How does the setup looks like&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- This is how the CT installation looks like (@@ToDo::details instructions to come)
-
-
-- This is how the circuit board setup looks like  (@@ToDo::details instructions to come)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;enclosure&quot;&gt;Enclosure&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- The stl file to enclose this product is under `../3dprinting/stl-files/energy-monitor-case.stl`
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-plantuml&quot;&gt;@startuml
-:Main Admin: as Admin
-(Use the application) as (Use)
-
-User -&amp;gt; (Start)
-User --&amp;gt; (Use)
-
-Admin ---&amp;gt; (Use)
-
-note right of Admin : This is an example.
-
-note right of (Use)
-  A note can also
-  be on several lines
-end note
-
-note &quot;This note is connected\nto several objects.&quot; as N2
-(Start) .. N2
-N2 .. (Use)
-@enduml
-&lt;/code&gt;&lt;/pre&gt;
-</content>
-    </entry>
+        
     
-    <entry>
-        <title>Kiwi Fruit</title>
-        <link href="/2021/03/03/kiwifruit/"/>
-        <updated>2021-03-03T00:00:00+00:00</updated>
-        <id>/2021/03/03/kiwifruit</id>
-        <content type="html">&lt;p&gt;Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
-berry of several species of woody vines in the genus Actinidia.&lt;/p&gt;
-
-&lt;p&gt;The most common cultivar group of kiwifruit is oval, about the size of a large
-hen’s egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) in
-diameter). It has a fibrous, dull greenish-brown skin and bright green or
-golden flesh with rows of tiny, black, edible seeds. The fruit has a soft
-texture, with a sweet and unique flavor.&lt;/p&gt;
-</content>
-    </entry>
+        
     
-    <entry>
-        <title>Apples</title>
-        <link href="/2021/03/03/apples/"/>
-        <updated>2021-03-03T00:00:00+00:00</updated>
-        <id>/2021/03/03/apples</id>
-        <content type="html">&lt;p&gt;An apple is a sweet, edible fruit produced by an apple tree.&lt;/p&gt;
-
-&lt;p&gt;Apple trees are cultivated worldwide, and are the most widely grown species in
-the genus Malus. The tree originated in Central Asia, where its wild ancestor,
-Malus sieversii, is still found today. Apples have been grown for thousands of
-years in Asia and Europe, and were brought to North America by European
-colonists.&lt;/p&gt;
-</content>
-    </entry>
+        
     
 
 </feed>
