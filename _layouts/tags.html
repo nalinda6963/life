@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="post">
+    <h1>Tag: {{ page.tags }}</h1>
+    <ul>
+        {% for post in site.tags[page.tags] %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.created-date | date_to_string }})<br>
+            {{ post.excerpt }}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<hr>
+
+{% include archive.html %}

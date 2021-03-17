@@ -4,6 +4,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+    <!--  Execute collecttags before it is used  -->
+    {% if site.tags != "" %}
+        {% include collect-tags.html %}
+    {% endif %}
+
     <title>
         {% if page.title == "Home" %}
         {{ site.title }} &middot; {{ site.tagline }}

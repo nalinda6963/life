@@ -29,7 +29,7 @@ There are more information on the https://github.com/asciidoctor/jekyll-asciidoc
 :page-created-date: 2021-03-04
 :page-doctype: article
 :page-title: The Value of Jetbrains Products
-:page-tags: [test tag with spaces, test_tag_no_spaces, JetBrains, IntelliJ, PyCharm, WebStorm, DataGrip]
+:page-tags: [test_tag_no_spaces, JetBrains, IntelliJ, PyCharm, WebStorm, DataGrip]
 :sectanchors:
 :sectlinks:
 :toc:

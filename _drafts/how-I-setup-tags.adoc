@@ -1,0 +1,23 @@
+:imagesdir: images
+:page-excerpt: This is explains how I set up tags with in my site.
+:page-created-date: 2021-03-16
+:page-doctype: article
+:page-title: How to Add Tags in Your Documents
+:page-tags: [howto, tags, theme_customization, mysite]
+:sectanchors:
+:sectlinks:
+:toc:
+
+= How to Add Tags in Your Documents
+
+When I wanted to add tags to my articles and render nicely on my site, I looked up for the available options out there. Before I spend time creating my own, luckily, I found this https://longqian.me/2017/02/09/github-jekyll-tag/[site] explaining the process in detail.
+
+== Customizations I made
+
+I renamed the layout file to `tags` instead of `tagpage` on the guide. Also, with in that, I updated every place it was reffering to tags to be `page.tags` since I am using `adoc` files the right attribute name is `tags` (in other pages it was referring correctly as tags).
+
+I updated the `archive` and `display` includes to have lowercase tag names to avoid having duplicate pages due to inconsistent letter cases.
+
+== Pain points
+
+The fact that I have to create page per tag is painful. I am planning to use the python script provided by the author.

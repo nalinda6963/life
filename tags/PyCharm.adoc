@@ -1,0 +1,3 @@
+:page-layout: tags
+:page-title: PyCharm
+:page-tags: PyCharm

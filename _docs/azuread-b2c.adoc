@@ -3,7 +3,7 @@
 :page-created-date: 2021-03-06
 :page-doctype: article
 :page-title: AzureAd B2C
-:page-tags: [azure, azureAD, b2c]
+:page-tags: [azure, azuread, b2c]
 :sectanchors:
 :sectlinks:
 :toc:

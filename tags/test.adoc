@@ -1,0 +1,3 @@
+:page-layout: tags
+:page-title: test
+:page-tags: test
