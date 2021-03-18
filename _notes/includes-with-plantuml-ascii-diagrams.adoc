@@ -1,0 +1,57 @@
+:imagesdir: images
+:page-excerpt: My personal notes on fixing the PlantUML templates processing errors.
+:page-created-date: 2021-03-18
+:page-doctype: article
+:page-title: PlantUML Templates - Issues with Processing
+:page-tags: [ howto, PlantUML, ascii, adoc, diagrams, ascii-diagram, includes, Azure-PlantUML, TravisCI, cannot_open_url]
+:sectanchors:
+:sectlinks:
+:toc:
+
+= PlantUML Templates - Issues with Includes
+
+I am using IntelliJ IDEA/ WebStorm IDE with asciidoc plugin installed to create ascii documents. When processing diagram definitions, locally, I use Kroki server on Docker.
+
+== The issue
+
+This setup worked well until I started exploring `Azure-PlantUML` an extension to PlantUML that let the architects create visually appealing cloud solutions diagrams with the platform native icons. The Azure-PlantUML` required to have `includes` to process azure components. In order to avoid lengthy `includes`, you can assign the base URL with `define` to a variable and use the variable for all other statements with `includeurl`.
+
+.Original definiton
+[source, PlantUML]
+----
+!define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/Databases/all.puml
+!includeurl AzurePuml/Compute/AzureFunction.puml
+----
+
+The above definition processed fine at the local setup, but ir was having issued processing on `TravisCI`, the CI/CD pipeline I use. The error was:
+
+[source, log]
+----
+issue raw.githubusercontent.com java.util.concurrent.ExecutionException: java.io.FileNotFoundException: https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+asciidoctor: ERROR: 2021-03-04-test.adoc: line 160: Failed to generate image: PlantUML image generation failed: [From <input> (line 2) ]
+
+@startuml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+^^^^^
+ Cannot open URL
+----
+
+Note:: The above console error was not failing the build, and build and deployment was successful but the image was missing on the page.
+
+== The fix
+
+In order to fix the issue, I updated all the references with absolute URLs with `include` tags.
+
+.Definition after the rearrangement
+[source, PlantUML]
+----
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/AzureCommon.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Analytics/AzureEventHub.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Analytics/AzureStreamAnalytics.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Databases/AzureCosmosDb.puml
+----
+
+The definition became crowded and [.underline]#local processing stopped working#, **BUT** once published (via the CI/ CD pipeline), image processed and rendered on the web page correctly.
+
