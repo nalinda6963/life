@@ -1,0 +1,100 @@
+:imagesdir: images
+:page-excerpt: This provides a solution to your concerns on sending the private diagram definitions to public ascii diagram servers for processing.
+:page-created-date: 2021-03-18
+:page-doctype: article
+:page-title: Ascii Diagram - Private Rendering with Kroki on Docker
+:page-tags: [ howto, Kroki, ascii, adoc, diagrams, ascii-diagram, docker, BlockDiag, ActDiag, NwDiag, SeqDiag, Mermaid, BPMN, bytefield, c4plantuml, ditaa, erd, graphviz, dot, nomnoml, plantuml, svgbob, umlet, vega, vegalite, wavedrom ]
+:sectanchors:
+:sectlinks:
+:toc:
+
+= Ascii Diagram - Private Rendering with Kroki on Docker
+
+If you have private diagrams that you want to process locally or with your own server installation, this provides the information necessary to start your jouney, and quickly validate your assumptions and capabilities. I am using Kroki here as it has the most complete support for diagram types available.
+
+Korki has a good set of https://docs.kroki.io/kroki/setup/install/[documentation] explaining the installation and API usage.
+
+== Local setup
+Here is how you can set up your local server up and running quickly.
+
+* Simply run docker in detached mode
+
+[source, docker-cli]
+docker run -p8080:8000 -d yuzutech/kroki
+
+* If you need `BlockDiag`, `ActDiag`, `NwDiag`, `SeqDiag`, `Mermaid` or `BPMN` capabilities as well. You can have the following compose file and run:
+
+.docker-compose.yml
+[source, dockerfile]
+----
+version: "3"
+services:
+  kroki:
+    image: yuzutech/kroki
+    depends_on:
+      - blockdiag
+      - mermaid
+      - bpmn
+      - excalidraw
+    environment:
+      - KROKI_BLOCKDIAG_HOST=blockdiag
+      - KROKI_MERMAID_HOST=mermaid
+      - KROKI_BPMN_HOST=bpmn
+      - KROKI_EXCALIDRAW_HOST=excalidraw
+    ports:
+      - "8000:8000"
+  blockdiag:
+    image: yuzutech/kroki-blockdiag
+    expose:
+      - "8001"
+  mermaid:
+    image: yuzutech/kroki-mermaid
+    expose:
+      - "8002"
+  bpmn:
+    image: yuzutech/kroki-bpmn
+    expose:
+      - "8003"
+  excalidraw:
+    image: yuzutech/kroki-excalidraw
+    expose:
+      - "8004"
+----
+
+[source, docker-cli]
+docker-compose up -d
+
+== Validation
+
+You can quickly validate your local server with the following `curl` request.
+
+.POST /graphviz
+[source, curl]
+----
+curl --location --request POST 'localhost:8080/graphviz' \
+--header 'Accept: image/svg+xml' \
+--header 'Content-Type: text/plain' \
+--data-raw 'digraph G {
+  Hello->World
+}'
+----
+
+Note::
+* If you see server issues. Make sure docker container is up and running `docker ps'.
+* About publishing with a local kroki server: you can have the image definition as follows and preprocess all your images (instead of during the deployment with in CI/CD). As long as you have the image directory path setup right, and the image is available with the image directory (node-diagram.png in this example). the html will pull the image correctly.
+
+[source, asciidoc]
+----
+    [graphviz, node-diagram, png]
+    ----
+    digraph foo {
+    node [style=rounded]
+    node1 [shape=box]
+    node2 [fillcolor=yellow, style="rounded,filled", shape=diamond]
+    node3 [shape=record, label="{ a | b | c }"]
+
+      node1 -> node2 -> node3
+    }
+    ----
+----
+

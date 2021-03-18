@@ -1,0 +1,20 @@
+:imagesdir: images
+:page-excerpt: Notes, lessons-learned, wisdom, travel-logs, hobbies, sports and all other life experiences of a Husband, Father, and a Techie.
+:page-created-date: 2021-03-04
+:page-doctype: article
+:page-title: README
+:page-tags: [ readme ]
+:sectanchors:
+:sectlinks:
+:toc:
+
+= Life
+
+Notes, lessons-learned, wisdom, travel-logs, hobbies, sports and all other life experiences of a Husband, Father, and a Techie.
+
+
+== IDE config to use Korki
+
+I am using JetBrains products (IntlliJ, WebStorm, etc). With IntelliJ you can access:
+
+'IntelliJ IDEA/ WebStorm -> Preferences -> Plugins -> search for AsciiDoc and install the plugin -> udnder Preferences -> Langauages & Frameworks -> AsciiDoc - Check the box that says "Use Kroki to render diagrams instead of AsciiDoctor Diagram" -> Point to your own server or local docker endpoint, which may have setup following the above setup guide - http://localhost:8080`
