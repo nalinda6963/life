@@ -380,7 +380,7 @@
     <span class="reading-time">
   
   
-    2 mins to read
+    1 min to read
   
 </span>
 
@@ -489,61 +489,9 @@
 <img src="images/memory.svg" alt="memory" width="510" height="280">
 </div>
 </div>
-<div class="listingblock">
+<div class="imageblock">
 <div class="content">
-<pre>Failed to generate image: PlantUML image generation failed: [From &lt;input&gt; (line 7) ]
-
-@startuml
-
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
-' convert it with additional command line argument -DRELATIVE_INCLUDE="." to use locally
-!if %variable_exists("RELATIVE_INCLUDE")
-...
-... ( skipping 1441 lines )
-...
-!endprocedure
-
-!unquoted procedure ContainerDb_Ext($alias, $label, $techn, $descr="", $sprite="", $tags="")
-database "$getContainer($label, $techn, $descr, $sprite)$getProps()" $toStereos("external_container", $tags) as $alias
-!endprocedure
-
-!unquoted procedure ContainerQueue_Ext($alias, $label, $techn, $descr="", $sprite="", $tags="")
-queue "$getContainer($label, $techn, $descr, $sprite)$getProps()" $toStereos("external_container", $tags) as $alias
-!endprocedure
-
-' Boundaries
-' ##################################
-
-!unquoted procedure Container_Boundary($alias, $label, $tags="")
-Boundary($alias, $label, "Container", $tags)
-!endprocedure
-
-!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
-!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
-!include /home/travis/build/nalinda6963/life/_posts/DEVICONS/angular.puml
-^^^^^
- cannot include /home/travis/build/nalinda6963/life/_posts/https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons/angular.puml
-
-
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
-
-!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
-!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
-!include DEVICONS/angular.puml
-!include DEVICONS/java.puml
-!include DEVICONS/msql_server.puml
-!include FONTAWESOME/users.puml
-
-LAYOUT_WITH_LEGEND()
-
-Person(user, "Customer", "People that need products", "users")
-Container(spa, "SPA", "angular", "The main interface that the customer interacts with", "angular")
-Container(api, "API", "java", "Handles all business logic", "java")
-ContainerDb(db, "Database", "Microsoft SQL", "Holds product, order and invoice information", "msql_server")
-
-Rel(user, spa, "Uses", "https")
-Rel(spa, api, "Uses", "https")
-Rel_R(api, db, "Reads/Writes")</pre>
+<img src="images/c4-diagram-test.svg" alt="c4 diagram test" width="553" height="769">
 </div>
 </div>
 </div>

@@ -4,7 +4,7 @@
     <title>Life</title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2021-03-18T19:53:06+00:00</updated>
+    <updated>2021-03-18T20:07:24+00:00</updated>
     <id></id>
     <author>
         <name>Isuru Wijesundara</name>
@@ -95,61 +95,9 @@
 &lt;img src=&quot;images/memory.svg&quot; alt=&quot;memory&quot; width=&quot;510&quot; height=&quot;280&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;Failed to generate image: PlantUML image generation failed: [From &amp;lt;input&amp;gt; (line 7) ]
-
-@startuml
-
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
-&apos; convert it with additional command line argument -DRELATIVE_INCLUDE=&quot;.&quot; to use locally
-!if %variable_exists(&quot;RELATIVE_INCLUDE&quot;)
-...
-... ( skipping 1441 lines )
-...
-!endprocedure
-
-!unquoted procedure ContainerDb_Ext($alias, $label, $techn, $descr=&quot;&quot;, $sprite=&quot;&quot;, $tags=&quot;&quot;)
-database &quot;$getContainer($label, $techn, $descr, $sprite)$getProps()&quot; $toStereos(&quot;external_container&quot;, $tags) as $alias
-!endprocedure
-
-!unquoted procedure ContainerQueue_Ext($alias, $label, $techn, $descr=&quot;&quot;, $sprite=&quot;&quot;, $tags=&quot;&quot;)
-queue &quot;$getContainer($label, $techn, $descr, $sprite)$getProps()&quot; $toStereos(&quot;external_container&quot;, $tags) as $alias
-!endprocedure
-
-&apos; Boundaries
-&apos; ##################################
-
-!unquoted procedure Container_Boundary($alias, $label, $tags=&quot;&quot;)
-Boundary($alias, $label, &quot;Container&quot;, $tags)
-!endprocedure
-
-!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
-!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
-!include /home/travis/build/nalinda6963/life/_posts/DEVICONS/angular.puml
-^^^^^
- cannot include /home/travis/build/nalinda6963/life/_posts/https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons/angular.puml
-
-
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
-
-!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
-!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
-!include DEVICONS/angular.puml
-!include DEVICONS/java.puml
-!include DEVICONS/msql_server.puml
-!include FONTAWESOME/users.puml
-
-LAYOUT_WITH_LEGEND()
-
-Person(user, &quot;Customer&quot;, &quot;People that need products&quot;, &quot;users&quot;)
-Container(spa, &quot;SPA&quot;, &quot;angular&quot;, &quot;The main interface that the customer interacts with&quot;, &quot;angular&quot;)
-Container(api, &quot;API&quot;, &quot;java&quot;, &quot;Handles all business logic&quot;, &quot;java&quot;)
-ContainerDb(db, &quot;Database&quot;, &quot;Microsoft SQL&quot;, &quot;Holds product, order and invoice information&quot;, &quot;msql_server&quot;)
-
-Rel(user, spa, &quot;Uses&quot;, &quot;https&quot;)
-Rel(spa, api, &quot;Uses&quot;, &quot;https&quot;)
-Rel_R(api, db, &quot;Reads/Writes&quot;)&lt;/pre&gt;
+&lt;img src=&quot;images/c4-diagram-test.svg&quot; alt=&quot;c4 diagram test&quot; width=&quot;553&quot; height=&quot;769&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
