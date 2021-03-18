@@ -380,7 +380,7 @@
     <span class="reading-time">
   
   
-    1 min to read
+    2 mins to read
   
 </span>
 
@@ -492,6 +492,37 @@
 <div class="imageblock">
 <div class="content">
 <img src="images/c4-diagram-test.svg" alt="c4 diagram test" width="553" height="769">
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Failed to generate image: PlantUML image generation failed: [From &lt;input&gt; (line 2) ]
+
+@startuml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+^^^^^
+ Cannot open URL
+
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/AzureCommon.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Analytics/AzureEventHub.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Analytics/AzureStreamAnalytics.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Databases/AzureCosmosDb.puml
+
+left to right direction
+
+agent "Device Simulator" as devices #fff
+
+AzureEventHub(fareDataEventHub, "Fare Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+AzureEventHub(tripDataEventHub, "Trip Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+AzureStreamAnalytics(streamAnalytics, "Stream Processing", "6 SUs")
+AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
+
+devices --&gt; fareDataEventHub
+devices --&gt; tripDataEventHub
+fareDataEventHub --&gt; streamAnalytics
+tripDataEventHub --&gt; streamAnalytics
+streamAnalytics --&gt; outputCosmosDb</pre>
 </div>
 </div>
 </div>

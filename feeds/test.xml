@@ -4,7 +4,7 @@
     <title>Life</title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2021-03-18T20:07:24+00:00</updated>
+    <updated>2021-03-18T20:23:09+00:00</updated>
     <id></id>
     <author>
         <name>Isuru Wijesundara</name>
@@ -98,6 +98,37 @@
 &lt;div class=&quot;imageblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
 &lt;img src=&quot;images/c4-diagram-test.svg&quot; alt=&quot;c4 diagram test&quot; width=&quot;553&quot; height=&quot;769&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;Failed to generate image: PlantUML image generation failed: [From &amp;lt;input&amp;gt; (line 2) ]
+
+@startuml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+^^^^^
+ Cannot open URL
+
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/AzureCommon.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Analytics/AzureEventHub.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Analytics/AzureStreamAnalytics.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Databases/AzureCosmosDb.puml
+
+left to right direction
+
+agent &quot;Device Simulator&quot; as devices #fff
+
+AzureEventHub(fareDataEventHub, &quot;Fare Data&quot;, &quot;PK: Medallion HackLicense VendorId; 3 TUs&quot;)
+AzureEventHub(tripDataEventHub, &quot;Trip Data&quot;, &quot;PK: Medallion HackLicense VendorId; 3 TUs&quot;)
+AzureStreamAnalytics(streamAnalytics, &quot;Stream Processing&quot;, &quot;6 SUs&quot;)
+AzureCosmosDb(outputCosmosDb, &quot;Output Database&quot;, &quot;1,000 RUs&quot;)
+
+devices --&amp;gt; fareDataEventHub
+devices --&amp;gt; tripDataEventHub
+fareDataEventHub --&amp;gt; streamAnalytics
+tripDataEventHub --&amp;gt; streamAnalytics
+streamAnalytics --&amp;gt; outputCosmosDb&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
