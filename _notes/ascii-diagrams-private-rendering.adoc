@@ -10,7 +10,7 @@
 
 = Ascii Diagram - Private Rendering with Kroki on Docker
 
-If you have private diagrams that you want to process locally or with your own server installation, this provides the information necessary to start your journey, and quickly validate your assumptions and capabilities. I am using Kroki here as it has the most complete support for diagram types available.
+If you have private diagrams that you want to process locally or with your own server installation, this provides the information necessary to start your journey, and quickly validate your assumptions and capabilities. I am using `Kroki` here as it has the most complete support for diagram types available.
 
 Kroki has a good set of https://docs.kroki.io/kroki/setup/install/[documentation] explaining the installation and API usage.
 
@@ -81,7 +81,7 @@ curl --location --request POST 'localhost:8080/graphviz' \
 
 Note::
 * If you see server issues. Make sure docker container is up and running `docker ps'.
-* About publishing with a local kroki server: you can have the image definition as follows and preprocess all your images (instead of during the deployment with in CI/CD). As long as you have the image directory path setup right, and the image is available with the image directory (node-diagram.png in this example). the html will pull the image correctly.
+* About publishing with a local Kroki server: you can have the image definition as follows and preprocess all your images (instead of during the deployment with in CI/CD). As long as you have the image directory path setup right, and the image is available with the image directory (node-diagram.png in this example). the html will pull the image correctly.
 
 [source, asciidoc]
 ----

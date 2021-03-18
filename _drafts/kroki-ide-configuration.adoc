@@ -25,3 +25,4 @@ Once the plugin is installed access:
 
 Note:: If you leave the server url blank, the plugin will by default send all the diagram definitions to the remote Kroki.io server for processing.
 
+
