@@ -10,9 +10,9 @@
 
 = Ascii Diagram - Private Rendering with Kroki on Docker
 
-If you have private diagrams that you want to process locally or with your own server installation, this provides the information necessary to start your jouney, and quickly validate your assumptions and capabilities. I am using Kroki here as it has the most complete support for diagram types available.
+If you have private diagrams that you want to process locally or with your own server installation, this provides the information necessary to start your journey, and quickly validate your assumptions and capabilities. I am using Kroki here as it has the most complete support for diagram types available.
 
-Korki has a good set of https://docs.kroki.io/kroki/setup/install/[documentation] explaining the installation and API usage.
+Kroki has a good set of https://docs.kroki.io/kroki/setup/install/[documentation] explaining the installation and API usage.
 
 == Local setup
 Here is how you can set up your local server up and running quickly.

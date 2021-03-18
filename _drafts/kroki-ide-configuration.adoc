@@ -1,5 +1,5 @@
 :imagesdir: images
-:page-excerpt: The how to guide on activating local diagram rendering with Korki.
+:page-excerpt: The how to guide on activating local diagram rendering with Kroki.
 :page-created-date: 2021-03-18
 :page-doctype: article
 :page-title: How to Setup Local Ascii Diagram  Rendering on IntelliJ and WebStorm.
