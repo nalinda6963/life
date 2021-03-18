@@ -158,7 +158,6 @@ Rel_R(api, db, "Reads/Writes")
 
 [plantuml, azure-diagram-test, svg]
 ----
-!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
 !include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/AzureCommon.puml
 !include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Analytics/AzureEventHub.puml
 !include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Analytics/AzureStreamAnalytics.puml
