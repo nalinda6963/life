@@ -1,5 +1,5 @@
 :imagesdir: images
-:page-excerpt: My personal notes on fixing the PlantUML templates processing errors.
+:page-excerpt: My notes on fixing the PlantUML templates processing errors.
 :page-created-date: 2021-03-18
 :page-doctype: article
 :page-title: PlantUML Templates - Issues with Processing
