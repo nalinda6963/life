@@ -155,3 +155,27 @@ Rel(spa, api, "Uses", "https")
 Rel_R(api, db, "Reads/Writes")
 
 ----
+
+[plantuml, azure-diagram-test, svg]
+----
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/AzureCommon.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Analytics/AzureEventHub.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Analytics/AzureStreamAnalytics.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Databases/AzureCosmosDb.puml
+
+left to right direction
+
+agent "Device Simulator" as devices #fff
+
+AzureEventHub(fareDataEventHub, "Fare Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+AzureEventHub(tripDataEventHub, "Trip Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+AzureStreamAnalytics(streamAnalytics, "Stream Processing", "6 SUs")
+AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
+
+devices --> fareDataEventHub
+devices --> tripDataEventHub
+fareDataEventHub --> streamAnalytics
+tripDataEventHub --> streamAnalytics
+streamAnalytics --> outputCosmosDb
+----
