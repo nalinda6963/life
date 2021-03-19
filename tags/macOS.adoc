@@ -1,3 +1,0 @@
-:page-layout: tags
-:page-title: macOS
-:page-tags: macOS

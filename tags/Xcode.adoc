@@ -1,3 +1,0 @@
-:page-layout: tags
-:page-title: Xcode
-:page-tags: Xcode

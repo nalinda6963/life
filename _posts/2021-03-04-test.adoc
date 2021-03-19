@@ -115,7 +115,6 @@ digraph g {
 
 [ditaa, memory, svg]
 ----
-
       +--------+
    0  |        |  <- start
       +--------+
@@ -135,7 +134,6 @@ digraph g {
 
 [plantuml, c4-diagram-test, svg]
 ----
-
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
 !include https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons/angular.puml
@@ -153,7 +151,6 @@ ContainerDb(db, "Database", "Microsoft SQL", "Holds product, order and invoice i
 Rel(user, spa, "Uses", "https")
 Rel(spa, api, "Uses", "https")
 Rel_R(api, db, "Reads/Writes")
-
 ----
 
 [plantuml, azure-diagram-test, svg]

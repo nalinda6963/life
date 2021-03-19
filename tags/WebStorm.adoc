@@ -1,3 +1,0 @@
-:page-layout: tags
-:page-title: WebStorm
-:page-tags: WebStorm

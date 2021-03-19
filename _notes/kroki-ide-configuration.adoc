@@ -7,9 +7,9 @@
 :sectanchors:
 :sectlinks:
 :toc:
-:local-kroki: /notes/ascii-diagrams-private-rendering.html
+:local-kroki: https:life.wijesundara.org/notes/ascii-diagrams-private-rendering
 
-== IDE config to use Kroki
+== IDE Config to Use Kroki
 
 I am using JetBrains products (IntlliJ, WebStorm, etc). With IntelliJ, you can access:
 

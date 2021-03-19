@@ -1,3 +1,0 @@
-:page-layout: tags
-:page-title: azure
-:page-tags: azure

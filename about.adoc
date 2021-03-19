@@ -1,0 +1,13 @@
+:imagesdir: images
+:pdf-page-layout: page
+:page-excerpt: This is a short summary of the document, which will showcase under the title in some pages.
+:page-created-date: 2021-03-04
+:page-doctype: article
+:page-title: About
+:sectanchors:
+:sectlinks:
+:toc:
+
+This page tells you a little about me and how I set up this site.
+
+The theme used in this website is evolved on to of one of the most famous Jekyll themes https://lanyon.getpoole.com/[Lanyon]
