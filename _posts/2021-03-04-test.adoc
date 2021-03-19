@@ -175,3 +175,8 @@ fareDataEventHub --> streamAnalytics
 tripDataEventHub --> streamAnalytics
 streamAnalytics --> outputCosmosDb
 ----
+
+== Testing emojis
+
+There are 5 thumbsups: :+1:, :+1:, :thumbsup:, :thumbsup:, :thumbs_up:
+There are 2 heart_eyes: :heart_eyes:, :heart_eyes:
