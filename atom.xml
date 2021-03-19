@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title>Life</title>
+    <link href="https://life.wijesundara.org/atom.xml" rel="self"/>
+    <link href="https://life.wijesundara.org/"/>
+    <updated>2021-03-19T05:09:53+00:00</updated>
+    <id>https://life.wijesundara.org</id>
+    <author>
+        <name>Isuru Wijesundara</name>
+        <email>isuru.wijesundara@wijesundara.org</email>
+    </author>
+
+    
+    <entry>
+        <title>The Value of Jetbrains Products</title>
+        <link href="https://life.wijesundara.org/2021/03/10/the-value-of-jetbrains-products/"/>
+        <updated>2021-03-10T00:00:00+00:00</updated>
+        <id>https://life.wijesundara.org/2021/03/10/the-value-of-jetbrains-products</id>
+        <content type="html">&lt;div id=&quot;toc&quot; class=&quot;toc&quot;&gt;
+&lt;div id=&quot;toctitle&quot;&gt;Table of Contents&lt;/div&gt;
+&lt;ul class=&quot;sectlevel1&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#who-is-jetbrains&quot;&gt;Who is JetBrains?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#what-value-do-jetbrains-products-provide&quot;&gt;What value do JetBrains products provide?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;who-is-jetbrains&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#who-is-jetbrains&quot;&gt;&lt;/a&gt;&lt;a class=&quot;link&quot; href=&quot;#who-is-jetbrains&quot;&gt;Who is JetBrains?&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;JetBrains is a company, which produces the best Integrated Development Environments (IDEs) available in the market for many languages, including Java, Python, and C#. Also, JetBrains suite has the following products, which are equally good and performing:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;IntelliJ IDEA&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Java&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kotlin&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Groovy&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rider&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;.NET&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C#&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ASP.NET&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PyCharm&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Python&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Django&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data Science&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;WebStorm&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;JavaScript, TypeScript&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Angular&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;React&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DataGrip&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SQL&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Databases&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AppCode&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Swift, Obj-C&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iOS, macOS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C/ C++&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CLion&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;C/ C++&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Embedded&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rust&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GoLand&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Go&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JavaScript, TypeScript&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SQL&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RubyMine&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ruby, Rails&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JavaScript, TypeScript&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SQL&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;what-value-do-jetbrains-products-provide&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#what-value-do-jetbrains-products-provide&quot;&gt;&lt;/a&gt;&lt;a class=&quot;link&quot; href=&quot;#what-value-do-jetbrains-products-provide&quot;&gt;What value do JetBrains products provide?&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;JetBrains IDEs are entirely focused on productivity, performance, and the developer experience.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Productivity:&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Industry-leading IntelliSense capability&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The best debugging experience&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Access to any library implementation to verify and comply with the contracts&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Easy navigation within the implementation and to and out of libraries&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Easy access to linting and security tools&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Re-factoring and formatting the code base is extremely easy with JetBrains products (very painful with other IDEs)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Seamless git integration (painful on other IDEs)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Performance:&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Great support in debugging, testing (unit tests and API test), and performance analysis&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In addition to the local debugging, remote debugging can easily be setup&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DataGrip has a good SQL performance analysis capability&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;IDE&lt;/code&gt; it self performs well, and the failure/ crash rate is extremely low&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Smart suggestions to improve performance and the quality of the codebase&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Experience:&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;JetBrains develop and support a significant number of plugins to enhance the developer experience and productivity. In addition to its plugins, JetBrains has the marketplace for community plugins, which JetBrains still controls the quality of implementation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Extremely easy to upgrade the product&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It is easy to set up and, once set up, little to no time necessary for ongoing configurations/ IDE trouble shootings.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#conclusion&quot;&gt;&lt;/a&gt;&lt;a class=&quot;link&quot; href=&quot;#conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Based on the gap between the JetBrains products&apos; value and what is out there in the market, spending $500 Per Annum on the JetBrains All Products pack is money well spent. A developer spending 4 hours troubleshooting IDE issues will cover the cost (which happens a lot with other IDEs).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Please visit this &lt;a href=&quot;https://www.jetbrains.com/company/customers/testimonials.html&quot;&gt;page&lt;/a&gt; to see the testimonials to the above capabilities of JetBrains&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The following is the partial list of DBs supported by &lt;code&gt;DataGrip&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;MS SQL Server&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Amazon RedShift&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Apache Cassandra&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Apache Derby&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Apache Hive&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Azure SQL DB&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ClickHouse&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Couchbase Query&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IBM DB2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MongoDB&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MariaDB&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MySQL&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Oracle&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PostgreSQL&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;#8230;&amp;#8203; the list goes on&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+    </entry>
+    
+    <entry>
+        <title>Test Document</title>
+        <link href="https://life.wijesundara.org/2021/03/04/test/"/>
+        <updated>2021-03-04T00:00:00+00:00</updated>
+        <id>https://life.wijesundara.org/2021/03/04/test</id>
+        <content type="html">&lt;div id=&quot;toc&quot; class=&quot;toc&quot;&gt;
+&lt;div id=&quot;toctitle&quot;&gt;Table of Contents&lt;/div&gt;
+&lt;ul class=&quot;sectlevel1&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#example-entry&quot;&gt;Example entry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#test-level-2-title&quot;&gt;Test level 2 title&lt;/a&gt;
+&lt;ul class=&quot;sectlevel2&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#test-level-3-title&quot;&gt;Test level 3 title&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#testing-emojis&quot;&gt;Testing emojis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;example-entry&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#example-entry&quot;&gt;&lt;/a&gt;&lt;a class=&quot;link&quot; href=&quot;#example-entry&quot;&gt;Example entry&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Cura is a free slicing software. Besides the fact this is free, Cura is one of the best slicing software options in the industry. It is necessary to have the right profile, matching your printer, loaded to get the best printing experience. The latest version of cura can be downloaded from &lt;a href=&quot;https://ultimaker.com/software/ultimaker-cura&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;test-level-2-title&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#test-level-2-title&quot;&gt;&lt;/a&gt;&lt;a class=&quot;link&quot; href=&quot;#test-level-2-title&quot;&gt;Test level 2 title&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Cura is a free slicing software. Besides the fact this is free, Cura is one of the best slicing software options in the industry. It is necessary to have the right profile, matching your printer, loaded to get the best printing experience. The latest version of cura can be downloaded from &lt;a href=&quot;https://ultimaker.com/software/ultimaker-cura&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;test-level-3-title&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#test-level-3-title&quot;&gt;&lt;/a&gt;&lt;a class=&quot;link&quot; href=&quot;#test-level-3-title&quot;&gt;Test level 3 title&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Cura is a free slicing software. Besides the fact this is free, Cura is one of the best slicing software options in the industry. It is necessary to have the right profile, matching your printer, loaded to get the best printing experience. The latest version of cura can be downloaded from &lt;a href=&quot;https://ultimaker.com/software/ultimaker-cura&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;images/plantuml-example-2.svg&quot; alt=&quot;plantuml example 2&quot; width=&quot;105&quot; height=&quot;120&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;images/test-1.svg&quot; alt=&quot;test 1&quot; width=&quot;158&quot; height=&quot;210&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;images/test-2.svg&quot; alt=&quot;test 2&quot; width=&quot;300&quot; height=&quot;220&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;images/test-3.svg&quot; alt=&quot;test 3&quot; width=&quot;328&quot; height=&quot;311&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;images/simple-auth-flow.svg&quot; alt=&quot;simple auth flow&quot; width=&quot;788&quot; height=&quot;534&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;images/ascii-diagram.svg&quot; alt=&quot;ascii diagram&quot; width=&quot;390&quot; height=&quot;182&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;images/node-diagram.png&quot; alt=&quot;node diagram&quot; width=&quot;158&quot; height=&quot;296&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;images/cyclic.png&quot; alt=&quot;cyclic&quot; width=&quot;119&quot; height=&quot;347&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;images/memory.svg&quot; alt=&quot;memory&quot; width=&quot;510&quot; height=&quot;266&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;images/c4-diagram-test.svg&quot; alt=&quot;c4 diagram test&quot; width=&quot;553&quot; height=&quot;769&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;images/azure-diagram-test.svg&quot; alt=&quot;azure diagram test&quot; width=&quot;887&quot; height=&quot;355&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;testing-emojis&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#testing-emojis&quot;&gt;&lt;/a&gt;&lt;a class=&quot;link&quot; href=&quot;#testing-emojis&quot;&gt;Testing emojis&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There are 5 thumbsups: :+1:! :+1:, :thumbsup:, :thumbsup:, :thumbs_up:
+There are 2 heart_eyes: :heart_eyes:, :heart_eyes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+    </entry>
+    
+    <entry>
+        <title>Energy Monitor</title>
+        <link href="https://life.wijesundara.org/2021/03/04/energy-monitor/"/>
+        <updated>2021-03-04T00:00:00+00:00</updated>
+        <id>https://life.wijesundara.org/2021/03/04/energy-monitor</id>
+        <content type="html">&lt;h1 id=&quot;energy-monitor-setup&quot;&gt;Energy Monitor Setup&lt;/h1&gt;
+&lt;p&gt;This monitoring system is current transformation (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CT&lt;/code&gt;) clamp based implementation. CT technology is based on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Faraday&lt;/code&gt; (Feh.ruh.dei) law (Same theory behind the generator).&lt;/p&gt;
+
+&lt;h2 id=&quot;what-have-i-used-in-this-setup&quot;&gt;What have I used in this setup&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- CircuitSetUp
+    - Open source (Crowd funded June 2019)
+    - Number of communication protocols 
+        i) Wifi 
+        ii) 3G 
+        iii) BLE
+        iv) LoRa (Low powered wide area network)
+
+    - Accuracy and the ability to measure mA level usages
+        - Used one of the powerful energy metering chic is made by Microchip now Atmel
+
+- ESP32 As the communicator between the chip and the server
+
+- Home Assistant (Data storage and visualizer)
+    - Open source
+    - Very powerful
+        - Visualization
+            i) Grafana
+            ii) InfluxDB
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;current-abilities&quot;&gt;Current Abilities&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Monitor and capture energy usage at the breaker level
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;future-enhancements&quot;&gt;Future Enhancements&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- ML model to read the energy signature and identify individual equipments
+    EX: Use cases: Home energy report will be more accurate
+
+- Predictive Analytics to provide equipment working condition to the customers
+    Ex: 
+    * Identify issues earlier and save unnecessary expensive service and replacement cost
+    * Promote equipment better serve individual customer usage and matches the home energy profile (Cost efficiency of going for most energy efficient vs what best for them based on the usage)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;how-does-the-setup-looks-like&quot;&gt;How does the setup looks like&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- This is how the CT installation looks like (@@ToDo::details instructions to come)
+
+
+- This is how the circuit board setup looks like  (@@ToDo::details instructions to come)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;enclosure&quot;&gt;Enclosure&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- The stl file to enclose this product is under `../3dprinting/stl-files/energy-monitor-case.stl`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-plantuml&quot;&gt;@startuml
+:Main Admin: as Admin
+(Use the application) as (Use)
+
+User -&amp;gt; (Start)
+User --&amp;gt; (Use)
+
+Admin ---&amp;gt; (Use)
+
+note right of Admin : This is an example.
+
+note right of (Use)
+  A note can also
+  be on several lines
+end note
+
+note &quot;This note is connected\nto several objects.&quot; as N2
+(Start) .. N2
+N2 .. (Use)
+@enduml
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Kiwi Fruit</title>
+        <link href="https://life.wijesundara.org/2021/03/03/kiwifruit/"/>
+        <updated>2021-03-03T00:00:00+00:00</updated>
+        <id>https://life.wijesundara.org/2021/03/03/kiwifruit</id>
+        <content type="html">&lt;p&gt;Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
+berry of several species of woody vines in the genus Actinidia.&lt;/p&gt;
+
+&lt;p&gt;The most common cultivar group of kiwifruit is oval, about the size of a large
+hen’s egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) in
+diameter). It has a fibrous, dull greenish-brown skin and bright green or
+golden flesh with rows of tiny, black, edible seeds. The fruit has a soft
+texture, with a sweet and unique flavor.&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Apples</title>
+        <link href="https://life.wijesundara.org/2021/03/03/apples/"/>
+        <updated>2021-03-03T00:00:00+00:00</updated>
+        <id>https://life.wijesundara.org/2021/03/03/apples</id>
+        <content type="html">&lt;p&gt;An apple is a sweet, edible fruit produced by an apple tree.&lt;/p&gt;
+
+&lt;p&gt;Apple trees are cultivated worldwide, and are the most widely grown species in
+the genus Malus. The tree originated in Central Asia, where its wild ancestor,
+Malus sieversii, is still found today. Apples have been grown for thousands of
+years in Asia and Europe, and were brought to North America by European
+colonists.&lt;/p&gt;
+</content>
+    </entry>
+    
+
+</feed>
