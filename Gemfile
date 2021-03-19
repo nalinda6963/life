@@ -9,6 +9,7 @@ gem 'asciidoctor', '~> 2.0'
 gem 'rake-jekyll', '~> 1.1'
 gem 'jekyll-plantuml', '~> 1.3'
 gem 'posix-spawn', '~> 0.3.15'
+gem 'jekyll-seo-tag', '~> 2.7'
 
 group :jekyll_plugins do
   gem 'asciidoctor-diagram', '~> 2.0'

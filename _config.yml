@@ -15,6 +15,12 @@ author:
   email:             isuru.wijesundara@wijesundara.org
 ###
 
+### Social IDs
+twitter_username:   nalinda6963
+github_username:    nalinda6963
+linkedin_username:  isuruwijesundara
+###
+
 asciidoc: {}
 
 asciidoctor:
@@ -69,9 +75,13 @@ keep_files:
 paginate: 5
 permalink: pretty
 
+tags:
+
 version: 0.1.0
 
-### Plugins and configurations
+plugins:
+  - jekyll-seo-tag
+
 #plugins:
 #  - jekyll-last-modified-at
 #
