@@ -18,15 +18,16 @@
 
         {% assign pages_list = site.pages | sort:"url" %}
         {% for node in pages_list %}
-        {% if node.title != null %}
-        {% if node.layout == "page" %}
-        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
-        {% endif %}
-        {% endif %}
+            {% if node.title != null %}
+                {% if node.layout == "page" %}
+                    <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+                {% endif %}
+            {% endif %}
         {% endfor %}
 
-        <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    </nav>
 
+    <div class="sidebar-item">
         <!-- social buttons -->
         {% if site.twitter_username %}
         <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ Twitter">
@@ -45,9 +46,13 @@
             <i class="fab fa-linkedin"></i>
         </a>
         {% endif %}
-    </nav>
-
-    <div class="sidebar-item">
+        {% if site.youtube_channel %}
+        <a href="https://youtube.com/channel/{{ site.youtube_channel }}" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        {% endif %}
+        <br>
+        <span>Currently v{{ site.version }}</span>
         <p>
             &copy; {{ site.time | date: '%Y' }}. All rights reserved.
         </p>
