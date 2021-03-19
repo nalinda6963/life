@@ -8,4 +8,4 @@ _site/
 /tmp/
 *.bundle
 Gemfile.lock
-/public/images/
+**/images/
