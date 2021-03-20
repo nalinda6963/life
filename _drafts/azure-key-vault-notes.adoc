@@ -1,0 +1,33 @@
+:imagesdir: images
+:page-excerpt: The notes on setting up and trouble shooting Azure KeyVault.
+:page-created-date: 2021-03-19
+:page-doctype: article
+:page-title: Azure KeyVault
+:page-tags: [azure, keyvault, cloud, platform-setup, secret-management, devops]
+:sectanchors:
+:sectlinks:
+:toc:
+
+= Azure Key Vault (KV)
+
+== Useful commands
+
+General:: Commands used at the KV level
+
+.List all deleted KeyVaults with in the subscription
+[source, azure-cli]
+az keyvault list-deleted --subscription <your-subscription-name>
+
+
+Certificates:: KV certificates related commands
+.List all deleted certificates with in a KV
+[source, azure-cli]
+az keyvault certificate list-deleted --vault-name <your-KV-name> --subscription <your-subscription-name>
+
+Following command will let you purge a deleted certificate with in the retention period. The must be created without the purge protection to purge a record (key, secret or certificate).
+
+.Purge a deleted certificate
+[source, azure-cli]
+az keyvault certificate purge --name <your-deeted-certificate-name> --subscription <your-subscription-name> --vault-name <your-KV-name>`
+
+For more available commands refer to the https://docs.microsoft.com/en-us/cli/azure/keyvault/certificate[Azure KeyVault certificate documentation].

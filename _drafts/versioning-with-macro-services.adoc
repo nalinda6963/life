@@ -1,0 +1,123 @@
+:imagesdir: images
+:page-excerpt: The notes on setting up versioning and version aware deployments and rollbacks strategy.
+:page-created-date: 2021-03-19
+:page-doctype: article
+:page-title: Versioning with Macro Services
+:page-tags: [azure, cloud, platform-setup, devops, sre]
+:sectanchors:
+:sectlinks:
+:toc:
+
+= App Deployment Strategy with Version Awareness and Rollback Capability
+
+This is an attempt to come up with an strategy to define a solid app deployment and rollback functionality. The additional attention is set on orchestrating the right version of each macro service and layers with realtime visibility and ability refer in the future.
+
+== Brainstorming and logic flow
+
+* Each layer will have the metadata related to the build/ app version
+* All layers will first deploy to integration environment and run integration and regression tests
+* If pass or fails an entry will be created in documentation (or in a suitable place) to indicate the
+
+.Deployment-1
+[plantuml, version-aware-deployments-1, svg]
+----
+start
+:Web Version
+    **x.x.x**;
+:API Version
+    **x.x.x**;
+:App Version
+    **x.x.x**;
+:PASS;
+stop
+----
+
+.Deployment-2
+[plantuml, version-aware-deployments-2, svg]
+----
+start
+:Web Version
+    **x.x.x**;
+:API Version
+    **x.x.x**;
+:App Version
+    **x.x.1**;
+:FAIL;
+stop
+----
+New version of the app code should update to compatible with API and web versions.
+
+.Deployment-3
+[plantuml, version-aware-deployments-3, svg]
+----
+start
+:Web Version
+    **x.x.x**;
+:API Version
+    **x.x.x**;
+:App Version
+    **x.x.2**;
+:PASS;
+stop
+----
+App made compatible with the API and web versions.
+
+.Deployment-4
+[plantuml, version-aware-deployments-4, svg]
+----
+start
+:Web Version
+    **x.x.x**;
+:API Version
+    **x.x.1**;
+:App Version
+    **x.x.2**;
+:PASS;
+stop
+----
+API code has a new version, which is build, deployed and integrated successfully.
+
+.Deployment-5
+[plantuml, version-aware-deployments-5, svg]
+----
+start
+:Web Version
+    **x.x.1**;
+:API Version
+    **x.x.1**;
+:App Version
+    **x.x.2**;
+:FAIL;
+stop
+----
+The new web code broke the integration.
+
+.Deployment-6
+[plantuml, version-aware-deployments-6, svg]
+----
+start
+:Web Version
+    **x.x.2**;
+:API Version
+    **x.x.1**;
+:App Version
+    **x.x.2**;
+:PASS;
+stop
+----
+Fixed the web code to be backward compatible broke the integration.
+
+.Deployment-7
+[plantuml, version-aware-deployments-7, svg]
+----
+start
+:Web Version
+    **x.x.2**;
+:API Version
+    **x.x.2**;
+:App Version
+    **x.x.2**;
+:PASS;
+stop
+----
+Update the API version.
