@@ -29,9 +29,9 @@
 
     <div class="sidebar-item">
         <!-- social buttons -->
-        {% if site.twitter_username %}
-        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ Twitter">
-            <i class="fab fa-twitter"></i>
+        {% if site.wp_username %}
+        <a href="https://{{site.wp_username}}.wordpress.com" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ WordPress">
+            <i class="fab fa-wordpress"></i>
         </a>
         {% endif %}
 
@@ -41,11 +41,18 @@
         </a>
         {% endif %}
 
+        {% if site.twitter_username %}
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        {% endif %}
+
         {% if site.linkedin_username %}
         <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ LinkedIn">
             <i class="fab fa-linkedin"></i>
         </a>
         {% endif %}
+
         {% if site.youtube_channel %}
         <a href="https://youtube.com/channel/{{ site.youtube_channel }}" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ YouTube">
             <i class="fab fa-youtube"></i>
