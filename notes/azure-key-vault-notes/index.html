@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--  Execute collecttags before it is used  -->
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <title>
+        
+        Azure KeyVault &middot; Life
+        
+    </title>
+
+    
+
+    <link rel="stylesheet" href="https://life.wijesundara.org/public/css/poole.css">
+    <link rel="stylesheet" href="https://life.wijesundara.org/public/css/syntax.css">
+    <link rel="stylesheet" href="https://life.wijesundara.org/public/css/lanyon.css">
+    <link rel="stylesheet" href="https://life.wijesundara.org/public/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://life.wijesundara.org/atom.xml">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://life.wijesundara.org/public/imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://life.wijesundara.org/public/imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://life.wijesundara.org/public/imgs/favicon-16x16.png">
+    <link rel="manifest" href="https://life.wijesundara.org/public/imgs/site.webmanifest">
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W54HLV2XHH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-W54HLV2XHH');
+    </script>
+    
+
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Azure KeyVault | Life</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Azure KeyVault" />
+<meta name="author" content="Isuru W." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The notes on setting up and trouble shooting Azure KeyVault." />
+<meta property="og:description" content="The notes on setting up and trouble shooting Azure KeyVault." />
+<link rel="canonical" href="https://life.wijesundara.org/notes/azure-key-vault-notes/" />
+<meta property="og:url" content="https://life.wijesundara.org/notes/azure-key-vault-notes/" />
+<meta property="og:site_name" content="Life" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-21T10:47:59+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Azure KeyVault" />
+<script type="application/ld+json">
+{"url":"https://life.wijesundara.org/notes/azure-key-vault-notes/","@type":"BlogPosting","description":"The notes on setting up and trouble shooting Azure KeyVault.","headline":"Azure KeyVault","dateModified":"2021-03-21T10:45:06+00:00","datePublished":"2021-03-21T10:47:59+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://life.wijesundara.org/notes/azure-key-vault-notes/"},"author":{"@type":"Person","name":"Isuru W."},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body class="theme-base-0b">
+
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-item">
+        <p>Notes, lessons-learned, wisdom, travel-logs, hobbies, sports and all other life experiences of a Husband, Father, and a Techie.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a class="sidebar-nav-item" href="https://life.wijesundara.org/">Home</a>
+
+        
+
+        
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+                    <a class="sidebar-nav-item" href="https://life.wijesundara.org/articles/">Articles</a>
+                
+            
+        
+            
+        
+            
+                
+                    <a class="sidebar-nav-item" href="https://life.wijesundara.org/blog/">Blog</a>
+                
+            
+        
+            
+                
+                    <a class="sidebar-nav-item" href="https://life.wijesundara.org/daily-notes/">Daily-Notes</a>
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+
+    </nav>
+
+    <div class="sidebar-item">
+        <!-- social buttons -->
+        
+        <a href="https://twitter.com/nalinda6963" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        
+
+        
+        <a href="https://github.com/nalinda6963" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        
+
+        
+        <a href="https://linkedin.com/in/isuruwijesundara" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        
+        
+        <a href="https://youtube.com/channel/UC6dtuXsC78CZDqFWgYhBx8Q" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        
+        <br>
+        <span>Currently v0.1.0</span>
+        <p>
+            &copy; 2021. All rights reserved.
+        </p>
+    </div>
+</div>
+
+
+
+<!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+     content to avoid any CSS collisions with our real content. -->
+<div class="wrap">
+  <div class="masthead">
+    <div class="container">
+      <h3 class="masthead-title">
+        <a href="/" title="Home">Life</a>
+        <small>Life of a Techie</small>
+      </h3>
+    </div>
+  </div>
+
+  <div class="container content">
+    <div>
+    <h1 class="page-title">Azure KeyVault</h1>
+    <span class="post-date"><span class="post-date">
+    19 Mar 2021
+    |
+    Isuru W.
+    |
+    <span class="reading-time">
+  
+  
+    2 mins to read
+  
+</span>
+
+
+    |
+    Revised: 21 Mar 2021
+</span>
+</span>
+    <span><span>
+    [
+      
+        
+        <a href="/tags/azure"><code class="highligher-rouge"><nobr>azure</nobr></code></a>
+      
+        
+        <a href="/tags/keyvault"><code class="highligher-rouge"><nobr>keyvault</nobr></code></a>
+      
+        
+        <a href="/tags/cloud"><code class="highligher-rouge"><nobr>cloud</nobr></code></a>
+      
+        
+        <a href="/tags/platform-setup"><code class="highligher-rouge"><nobr>platform-setup</nobr></code></a>
+      
+        
+        <a href="/tags/secret-management"><code class="highligher-rouge"><nobr>secret-management</nobr></code></a>
+      
+        
+        <a href="/tags/devops"><code class="highligher-rouge"><nobr>devops</nobr></code></a>
+      
+    ]
+</span>
+</span>
+    <div style="margin-top: 1rem">
+        <div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#useful-commands">Useful commands</a></li>
+<li><a href="#how-to-bulk-insert-secrets-in-to-azure-keyvault">How to bulk insert secrets in to Azure KeyVault</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="useful-commands"><a class="anchor" href="#useful-commands"></a><a class="link" href="#useful-commands">Useful commands</a></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">General</dt>
+<dd>
+<p>Commands used at the KV level</p>
+</dd>
+</dl>
+</div>
+<div class="listingblock">
+<div class="title">List all deleted KeyVaults with in the subscription</div>
+<div class="content">
+<pre class="highlight"><code class="language-azure-cli" data-lang="azure-cli">az keyvault list-deleted --subscription &lt;your-subscription-name&gt;</code></pre>
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Certificates</dt>
+<dd>
+<p>KV certificates related commands</p>
+</dd>
+</dl>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-azure-cli" data-lang="azure-cli">az keyvault certificate list-deleted --vault-name &lt;your-KV-name&gt; --subscription &lt;your-subscription-name&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Following command will let you purge a deleted certificate with in the retention period. The must be created without the purge protection to purge a record (key, secret or certificate).</p>
+</div>
+<div class="listingblock">
+<div class="title">Purge a deleted certificate</div>
+<div class="content">
+<pre class="highlight"><code class="language-azure-cli" data-lang="azure-cli">az keyvault certificate purge --name &lt;your-deeted-certificate-name&gt; --subscription &lt;your-subscription-name&gt; --vault-name &lt;your-KV-name&gt;`</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For more available commands refer to the <a href="https://docs.microsoft.com/en-us/cli/azure/keyvault/certificate">Azure KeyVault certificate documentation</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="how-to-bulk-insert-secrets-in-to-azure-keyvault"><a class="anchor" href="#how-to-bulk-insert-secrets-in-to-azure-keyvault"></a><a class="link" href="#how-to-bulk-insert-secrets-in-to-azure-keyvault">How to bulk insert secrets in to Azure KeyVault</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you want to quickly bulk insert secrets in to a KeyVault, you can use following bulk insert with a csv file input. In the production and even in the lower environment, I highly encourage anyone to fully automate this process with <code>Terraform</code> and CI/CD.</p>
+</div>
+<div class="listingblock">
+<div class="title">Install az moule with in poweshell</div>
+<div class="content">
+<pre class="highlight"><code class="language-powershell" data-lang="powershell">install-module az -force -scope currentuser</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Sign in to the account</div>
+<div class="content">
+<pre class="highlight"><code class="language-powershell" data-lang="powershell">connect-azaccount</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Bulck insert secrets</div>
+<div class="content">
+<pre class="highlight"><code class="language-powershell" data-lang="powershell">import-csv /&lt;path-to-your-file&gt;/&lt;your-secret-file-name&gt;.csv | foreach {
+$secret = convertto-securestring -string $_.Secret -asplaintext -force
+set-azkeyvaultsecret -vaultname &lt;your-keyvault-name&gt; -name $_.Name -secretvalue $secret
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Example import file</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Secret</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">default-location</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eastus</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">subscription-id</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12345</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tenant-id</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12345</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sql-server-admin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">admin-user</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sql-server-admin-pw</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">your@pasword</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+<script src='/public/js/script.js'></script>
+</body>
+</html>
