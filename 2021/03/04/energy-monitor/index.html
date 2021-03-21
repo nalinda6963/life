@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--  Execute collecttags before it is used  -->
+    
+        <!-- Reference:: https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <title>
+        
+        Energy Monitor &middot; Life
+        
+    </title>
+
+    
+
+    <link rel="stylesheet" href="https://life.wijesundara.org/public/css/poole.css">
+    <link rel="stylesheet" href="https://life.wijesundara.org/public/css/syntax.css">
+    <link rel="stylesheet" href="https://life.wijesundara.org/public/css/lanyon.css">
+    <link rel="stylesheet" href="https://life.wijesundara.org/public/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://life.wijesundara.org/atom.xml">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://life.wijesundara.org/public/imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://life.wijesundara.org/public/imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://life.wijesundara.org/public/imgs/favicon-16x16.png">
+    <link rel="manifest" href="https://life.wijesundara.org/public/imgs/site.webmanifest">
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W54HLV2XHH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-W54HLV2XHH');
+    </script>
+    
+
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Energy Monitor | Life</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Energy Monitor" />
+<meta name="author" content="Isuru W." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This monitoring system is current transformation (CT) clamp based implementation. CT technology is based on Faraday (Feh.ruh.dei) law (Same theory behind the generator)." />
+<meta property="og:description" content="This monitoring system is current transformation (CT) clamp based implementation. CT technology is based on Faraday (Feh.ruh.dei) law (Same theory behind the generator)." />
+<link rel="canonical" href="https://life.wijesundara.org/2021/03/04/energy-monitor/" />
+<meta property="og:url" content="https://life.wijesundara.org/2021/03/04/energy-monitor/" />
+<meta property="og:site_name" content="Life" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-04T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Energy Monitor" />
+<script type="application/ld+json">
+{"url":"https://life.wijesundara.org/2021/03/04/energy-monitor/","@type":"BlogPosting","description":"This monitoring system is current transformation (CT) clamp based implementation. CT technology is based on Faraday (Feh.ruh.dei) law (Same theory behind the generator).","headline":"Energy Monitor","dateModified":"2021-03-16T19:54:28+00:00","datePublished":"2021-03-04T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://life.wijesundara.org/2021/03/04/energy-monitor/"},"author":{"@type":"Person","name":"Isuru W."},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body class="theme-base-0b">
+
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-item">
+        <p>Notes, lessons-learned, wisdom, travel-logs, hobbies, sports and all other life experiences of a Husband, Father, and a Techie.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a class="sidebar-nav-item" href="https://life.wijesundara.org/">Home</a>
+
+        
+
+        
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+                    <a class="sidebar-nav-item" href="https://life.wijesundara.org/about/">About</a>
+                
+            
+        
+            
+                
+                    <a class="sidebar-nav-item" href="https://life.wijesundara.org/articles/">Articles</a>
+                
+            
+        
+            
+        
+            
+                
+                    <a class="sidebar-nav-item" href="https://life.wijesundara.org/blog/">Blog</a>
+                
+            
+        
+            
+                
+                    <a class="sidebar-nav-item" href="https://life.wijesundara.org/daily-notes/">Daily-Notes</a>
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+
+    </nav>
+
+    <div class="sidebar-item">
+        <!-- social buttons -->
+        
+        <a href="https://isuruwijesundara.wordpress.com" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ WordPress">
+            <i class="fab fa-wordpress"></i>
+        </a>
+        
+
+        
+        <a href="https://github.com/nalinda6963" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/nalinda6963" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        
+
+        
+        <a href="https://linkedin.com/in/isuruwijesundara" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        
+
+        
+        <a href="https://youtube.com/channel/UC6dtuXsC78CZDqFWgYhBx8Q" target="_blank" rel="noopener" style="text-decoration:none" title="Isuru @ YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        
+        <br>
+        <span>Currently v0.1.0</span>
+        <p>
+            &copy; 2021. All rights reserved.
+        </p>
+    </div>
+</div>
+
+
+
+<!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+     content to avoid any CSS collisions with our real content. -->
+<div class="wrap">
+  <div class="masthead">
+    <div class="container">
+      <h3 class="masthead-title">
+        <a href="/" title="Home">Life</a>
+        <small>Life of a Techie</small>
+      </h3>
+    </div>
+  </div>
+
+  <div class="container content">
+    <div class="post">
+    <h1 class="post-title">Energy Monitor</h1>
+    <span class="post-date"><span class="post-date">
+    04 Mar 2021
+    |
+    Isuru W.
+    |
+    <span class="reading-time">
+  
+  
+    1 min to read
+  
+</span>
+
+
+    |
+    Revised: 16 Mar 2021
+</span>
+</span>
+    <span><span>
+    [
+      
+    ]
+</span>
+</span>
+    <div style="margin-top: 1rem">
+        <h1 id="energy-monitor-setup">Energy Monitor Setup</h1>
+<p>This monitoring system is current transformation (<code class="language-plaintext highlighter-rouge">CT</code>) clamp based implementation. CT technology is based on <code class="language-plaintext highlighter-rouge">Faraday</code> (Feh.ruh.dei) law (Same theory behind the generator).</p>
+
+<h2 id="what-have-i-used-in-this-setup">What have I used in this setup</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- CircuitSetUp
+    - Open source (Crowd funded June 2019)
+    - Number of communication protocols 
+        i) Wifi 
+        ii) 3G 
+        iii) BLE
+        iv) LoRa (Low powered wide area network)
+
+    - Accuracy and the ability to measure mA level usages
+        - Used one of the powerful energy metering chic is made by Microchip now Atmel
+
+- ESP32 As the communicator between the chip and the server
+
+- Home Assistant (Data storage and visualizer)
+    - Open source
+    - Very powerful
+        - Visualization
+            i) Grafana
+            ii) InfluxDB
+</code></pre></div></div>
+
+<h2 id="current-abilities">Current Abilities</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Monitor and capture energy usage at the breaker level
+</code></pre></div></div>
+
+<h2 id="future-enhancements">Future Enhancements</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- ML model to read the energy signature and identify individual equipments
+    EX: Use cases: Home energy report will be more accurate
+
+- Predictive Analytics to provide equipment working condition to the customers
+    Ex: 
+    * Identify issues earlier and save unnecessary expensive service and replacement cost
+    * Promote equipment better serve individual customer usage and matches the home energy profile (Cost efficiency of going for most energy efficient vs what best for them based on the usage)
+</code></pre></div></div>
+
+<h2 id="how-does-the-setup-looks-like">How does the setup looks like</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- This is how the CT installation looks like (@@ToDo::details instructions to come)
+
+
+- This is how the circuit board setup looks like  (@@ToDo::details instructions to come)
+</code></pre></div></div>
+
+<h2 id="enclosure">Enclosure</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- The stl file to enclose this product is under `../3dprinting/stl-files/energy-monitor-case.stl`
+</code></pre></div></div>
+
+<pre><code class="language-plantuml">@startuml
+:Main Admin: as Admin
+(Use the application) as (Use)
+
+User -&gt; (Start)
+User --&gt; (Use)
+
+Admin ---&gt; (Use)
+
+note right of Admin : This is an example.
+
+note right of (Use)
+  A note can also
+  be on several lines
+end note
+
+note "This note is connected\nto several objects." as N2
+(Start) .. N2
+N2 .. (Use)
+@enduml
+</code></pre>
+
+    </div>
+</div>
+
+
+<div class="related">
+    <h2>Related posts</h2>
+    <ul class="related-posts">
+        
+        <li>
+            <h3>
+                <a href="/2021/03/10/the-value-of-jetbrains-products/">
+                    The Value of Jetbrains Products
+                    <small>10 Mar 2021</small>
+                </a>
+            </h3>
+        </li>
+        
+        <li>
+            <h3>
+                <a href="/2021/03/04/test/">
+                    Test Document
+                    <small>04 Mar 2021</small>
+                </a>
+            </h3>
+        </li>
+        
+        <li>
+            <h3>
+                <a href="/2021/03/03/kiwifruit/">
+                    Kiwi Fruit
+                    <small>03 Mar 2021</small>
+                </a>
+            </h3>
+        </li>
+        
+    </ul>
+</div>
+
+
+  </div>
+</div>
+
+<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+<script src='/public/js/script.js'></script>
+</body>
+</html>

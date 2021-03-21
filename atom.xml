@@ -4,7 +4,7 @@
     <title>Life</title>
     <link href="https://life.wijesundara.org/atom.xml" rel="self"/>
     <link href="https://life.wijesundara.org/"/>
-    <updated>2021-03-21T14:40:23+00:00</updated>
+    <updated>2021-03-21T16:00:17+00:00</updated>
     <id>https://life.wijesundara.org</id>
     <author>
         <name>Isuru Wijesundara</name>
@@ -393,9 +393,19 @@
 &lt;img src=&quot;images/simple-auth-flow.svg&quot; alt=&quot;simple auth flow&quot; width=&quot;788&quot; height=&quot;534&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;images/ascii-diagram.svg&quot; alt=&quot;ascii diagram&quot; width=&quot;390&quot; height=&quot;182&quot;&gt;
+&lt;pre&gt;Failed to generate image: Error processing request {:url=&amp;gt;&quot;/ditaa&quot;, :body=&amp;gt;&quot;+--------+   +-------+    +-------+\n|        +---+ ditaa +--&amp;gt; |       |\n|  Text  |   +-------+    |diagram|\n|Document|   |!magic!|    |       |\n|     {d}|   |       |    |       |\n+---+----+   +-------+    +-------+\n    :                         ^\n    |       Lots of work      |\n    +-------------------------+&quot;, :headers=&amp;gt;{&quot;Accept&quot;=&amp;gt;&quot;image/svg+xml&quot;, &quot;X-Options&quot;=&amp;gt;&quot;&quot;}}
+Encoding of input is UTF-8
++--------+   +-------+    +-------+
+|        +---+ ditaa +--&amp;gt; |       |
+|  Text  |   +-------+    |diagram|
+|Document|   |!magic!|    |       |
+|     {d}|   |       |    |       |
++---+----+   +-------+    +-------+
+    :                         ^
+    |       Lots of work      |
+    +-------------------------+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;imageblock&quot;&gt;
@@ -408,19 +418,70 @@
 &lt;img src=&quot;images/cyclic.png&quot; alt=&quot;cyclic&quot; width=&quot;119&quot; height=&quot;347&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;images/memory.svg&quot; alt=&quot;memory&quot; width=&quot;510&quot; height=&quot;266&quot;&gt;
+&lt;pre&gt;Failed to generate image: Broken pipe
+      +--------+
+   0  |        |  &amp;lt;- start
+      +--------+
+   1  |        |  &amp;lt;- q  scans from start to end
+      +--------+
+      :  ..... |
+      +--------+
+      |        |  &amp;lt;- end
+      +--------+  &amp;lt;-+
+      |        |    |
+      +--------+    | rest of the
+      :  ..... |    | allocated memory
+      +--------+    |
+  n   |        |    |
+      +--------+  &amp;lt;-+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;images/c4-diagram-test.svg&quot; alt=&quot;c4 diagram test&quot; width=&quot;553&quot; height=&quot;769&quot;&gt;
+&lt;pre&gt;Failed to generate image: Broken pipe
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!include https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons/angular.puml
+!include https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons/java.puml
+!include https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons/msql_server.puml
+!include https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5/users.puml
+
+LAYOUT_WITH_LEGEND()
+
+Person(user, &quot;Customer&quot;, &quot;People that need products&quot;, &quot;users&quot;)
+Container(spa, &quot;SPA&quot;, &quot;angular&quot;, &quot;The main interface that the customer interacts with&quot;, &quot;angular&quot;)
+Container(api, &quot;API&quot;, &quot;java&quot;, &quot;Handles all business logic&quot;, &quot;java&quot;)
+ContainerDb(db, &quot;Database&quot;, &quot;Microsoft SQL&quot;, &quot;Holds product, order and invoice information&quot;, &quot;msql_server&quot;)
+
+Rel(user, spa, &quot;Uses&quot;, &quot;https&quot;)
+Rel(spa, api, &quot;Uses&quot;, &quot;https&quot;)
+Rel_R(api, db, &quot;Reads/Writes&quot;)&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;images/azure-diagram-test.svg&quot; alt=&quot;azure diagram test&quot; width=&quot;887&quot; height=&quot;355&quot;&gt;
+&lt;pre&gt;Failed to generate image: Broken pipe
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/AzureCommon.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Analytics/AzureEventHub.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Analytics/AzureStreamAnalytics.puml
+!include https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist/Databases/AzureCosmosDb.puml
+
+left to right direction
+
+agent &quot;Device Simulator&quot; as devices #fff
+
+AzureEventHub(fareDataEventHub, &quot;Fare Data&quot;, &quot;PK: Medallion HackLicense VendorId; 3 TUs&quot;)
+AzureEventHub(tripDataEventHub, &quot;Trip Data&quot;, &quot;PK: Medallion HackLicense VendorId; 3 TUs&quot;)
+AzureStreamAnalytics(streamAnalytics, &quot;Stream Processing&quot;, &quot;6 SUs&quot;)
+AzureCosmosDb(outputCosmosDb, &quot;Output Database&quot;, &quot;1,000 RUs&quot;)
+
+devices --&amp;gt; fareDataEventHub
+devices --&amp;gt; tripDataEventHub
+fareDataEventHub --&amp;gt; streamAnalytics
+tripDataEventHub --&amp;gt; streamAnalytics
+streamAnalytics --&amp;gt; outputCosmosDb&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -544,6 +605,11 @@ the genus Malus. The tree originated in Central Asia, where its wild ancestor,
 Malus sieversii, is still found today. Apples have been grown for thousands of
 years in Asia and Europe, and were brought to North America by European
 colonists.&lt;/p&gt;
+
+&lt;h2 id=&quot;testing-emojis&quot;&gt;Testing emojis&lt;/h2&gt;
+
+&lt;p&gt;There are 5 thumbsups :+1: :+1:, :thumbsup:, :thumbsup:, :thumbs_up:
+There are 2 heart_eyes: :heart_eyes:, :heart_eyes:&lt;/p&gt;
 </content>
     </entry>
     

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title>Life</title>
+    <link href="/atom.xml" rel="self"/>
+    <link href="https://life.wijesundara.org/"/>
+    <updated>2021-03-21T16:00:17+00:00</updated>
+    <id>https://life.wijesundara.org</id>
+    <author>
+        <name>Isuru Wijesundara</name>
+        <email>isuru.wijesundara@wijesundara.org</email>
+    </author>
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+</feed>
