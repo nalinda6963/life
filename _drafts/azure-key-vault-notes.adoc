@@ -31,3 +31,32 @@ Following command will let you purge a deleted certificate with in the retention
 az keyvault certificate purge --name <your-deeted-certificate-name> --subscription <your-subscription-name> --vault-name <your-KV-name>`
 
 For more available commands refer to the https://docs.microsoft.com/en-us/cli/azure/keyvault/certificate[Azure KeyVault certificate documentation].
+
+== How to bulk insert secrets in to Azure KeyVault
+If you want to quickly bulk insert secrets in to a KeyVault, you can use following bulk insert with a csv file input. In the production and even in the lower environment, I highly encourage anyone to fully automate this process with `Terraform` and CI/CD.
+
+.Install az moule with in poweshell
+[source, powershell]
+install-module az -force -scope currentuser
+
+.Sign in to the account
+[source, powershell]
+connect-azaccount
+
+.Bulck insert secrets
+[source, powershell]
+import-csv /<path-to-your-file>/<your-secret-file-name>.csv | foreach {
+$secret = convertto-securestring -string $_.Secret -asplaintext -force
+set-azkeyvaultsecret -vaultname <your-keyvault-name> -name $_.Name -secretvalue $secret
+}
+
+.Example import file
+[%header,format=csv]
+|===
+Name,Secret
+default-location, eastus
+subscription-id, 12345
+tenant-id, 12345
+sql-server-admin, admin-user
+sql-server-admin-pw, your@pasword
+|===
