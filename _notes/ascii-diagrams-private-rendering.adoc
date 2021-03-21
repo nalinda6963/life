@@ -3,7 +3,7 @@
 :page-created-date: 2021-03-18
 :page-doctype: article
 :page-title: Ascii Diagram - Private Rendering with Kroki on Docker
-:page-tags: [ howto, Kroki, ascii, adoc, diagrams, ascii-diagram, docker, BlockDiag, ActDiag, NwDiag, SeqDiag, Mermaid, BPMN, bytefield, c4plantuml, ditaa, erd, graphviz, dot, nomnoml, plantuml, svgbob, umlet, vega, vegalite, wavedrom ]
+:page-tags: [ howto, kroki, ascii, adoc, diagrams, ascii-diagram, docker, blockdiag, actdiag, nwdiag, seqdiag, mermaid, bpmn, bytefield, c4plantuml, ditaa, erd, graphviz, dot, nomnoml, plantuml, svgbob, umlet, vega, vegalite, wavedrom ]
 :sectanchors:
 :sectlinks:
 :toc:

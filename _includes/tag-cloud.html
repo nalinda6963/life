@@ -1,14 +1,47 @@
+
 <h2>Tag Cloud</h2>
-{% capture temptags %}
-    {% for tag in site.tags %}
-        {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
-    {% endfor %}
-{% endcapture %}
+<!-- Solution to work with default jekyll tag functionality for _posts -->
+<!-- Commenting to use in the future with the possible refactor to have categories instead of collections-->
+<!--{% capture temptags %}-->
+<!--    {% for tag in site.tags %}-->
+<!--        {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}-->
+<!--    {% endfor %}-->
+<!--{% endcapture %}-->
 
-{% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
+<!--{% assign sortedtemptags = temptags | split:' ' | sort | reverse %}-->
 
-{% for temptag in sortedtemptags %}
-    {% assign tagitems = temptag | split: '#' %}
-    {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
-    <a href="/tags/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>
+<!--{% for temptag in sortedtemptags %}-->
+<!--    {% assign tagitems = temptag | split: '#' %}-->
+<!--    {% capture tagname %}{{ tagitems[1] }}{% endcapture %}-->
+<!--    <a href="/tags/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>-->
+<!--{% endfor %}-->
+
+<!-- Inspired by https://stackoverflow.com/a/36497052 -->
+
+{% comment %}map, flatten and sort{% endcomment %}
+{% assign tags =  site.documents | map: 'tags' | join: ','  | split: ',' | sort %}
+{% assign previousTag = "" %}
+{% assign counter = 0 %}
+
+{% for currentTag in tags %}
+
+    {% comment %}first loop : initializing previousTag{% endcomment %}
+    {% if previousTag == "" %}
+        {% assign previousTag = currentTag %}
+    {% endif %}
+
+    {% if currentTag == previousTag %}
+        {% assign counter = counter | plus: 1 %}
+    {% else %}
+        <a href="/tags/{{ previousTag }}"><code class="highligher-rouge"><nobr>{{ previousTag }} ({{ counter }})</nobr></code></a>
+        {% assign counter = 1 %}
+    {% endif %}
+
+    {% comment %}last loop : flushing what's left to print{% endcomment %}
+    {% if forloop.last %}
+        <a href="/tags/{{ currentTag }}"><code class="highligher-rouge"><nobr>{{ currentTag }} ({{ counter }})</nobr></code></a>
+    {% endif %}
+
+    {% assign previousTag = currentTag %}
+
 {% endfor %}

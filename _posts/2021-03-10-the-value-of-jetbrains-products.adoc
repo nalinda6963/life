@@ -3,7 +3,7 @@
 :page-created-date: 2021-03-11
 :page-doctype: article
 :page-title: The Value of Jetbrains Products
-:page-tags: [JetBrains, IntelliJ, PyCharm, WebStorm, DataGrip]
+:page-tags: [jetbrains, intellij, pycharm, webstorm, datagrip]
 :sectanchors:
 :sectlinks:
 :toc:

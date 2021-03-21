@@ -3,7 +3,7 @@
 :page-created-date: 2021-03-15
 :page-doctype: article
 :page-title: macOS Xcode Issue
-:page-tags: [macOS, Xcode, xrun_error]
+:page-tags: [macos, xcode, xrun_error]
 :sectanchors:
 :sectlinks:
 :toc:

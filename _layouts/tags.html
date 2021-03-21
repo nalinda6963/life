@@ -1,13 +1,17 @@
 ---
 layout: default
 ---
+<!-- Inspired by https://stackoverflow.com/a/36979311 -->
 <div class="post">
+    {% assign tags =  site.documents | map: 'tags' | join: ','  | split: ',' | uniq %}
     <h1>Tag: {{ page.tags }}</h1>
     <ul>
-        {% for post in site.tags[page.tags] %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.created-date | date_to_string }})<br>
-            {{ post.excerpt }}
-        </li>
+        {% for doc in site.documents %}
+            {% if doc.tags contains page.tags %}
+                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a> ({{ doc.created-date | date_to_string }})<br>
+                    {{ doc.excerpt }}
+                </li>
+            {% endif %}
         {% endfor %}
     </ul>
 </div>

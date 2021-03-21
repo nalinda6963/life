@@ -3,7 +3,7 @@
 :page-created-date: 2021-03-19
 :page-doctype: article
 :page-title: Azure KeyVault
-:page-tags: [azure, keyvault, cloud, platform-setup, secret-management, devops]
+:page-tags: [azure, keyvault, cloud, cloud-platform-setup, secret-management, devops]
 :sectanchors:
 :sectlinks:
 :toc:

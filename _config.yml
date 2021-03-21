@@ -2,20 +2,19 @@
 title:               Life
 tagline:             'Life of a Techie'
 description:         'Notes, lessons-learned, wisdom, travel-logs, hobbies, sports and all other life experiences of a Husband, Father, and a Techie.'
-# comment the url for local developments
+# comment the remote url for local developments
 url:                  https://life.wijesundara.org
-###
+#url:                  http://localhost:4000
 
 google_analytics_id: G-W54HLV2XHH
 
-### About/contact
+# About/contact
 author:
   name:              Isuru Wijesundara
   url:               https://twitter.com/nalinda6963
   email:             isuru.wijesundara@wijesundara.org
-###
 
-### Social IDs
+# Social IDs
 twitter_username:   nalinda6963
 github_username:    nalinda6963
 linkedin_username:  isuruwijesundara
@@ -70,23 +69,26 @@ exclude:
   - Rakefile
   - .jekyll-cache
 
+# not working with collections tags
+#feed:
+#  collections:
+#    - notes
+#    - docs
+#  tags: true
+
 keep_files:
   - images
   - jemoji
 
 paginate: 5
+
 permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+#  - jekyll-feed
 
 tags:
 
 version: 0.1.0
 
-plugins:
-  - jekyll-seo-tag
-
-#plugins:
-#  - jekyll-last-modified-at
-#
-#last-modified-at:
-#  date-format: '%d-%b-%y'
-###

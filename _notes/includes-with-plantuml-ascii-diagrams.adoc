@@ -3,7 +3,7 @@
 :page-created-date: 2021-03-18
 :page-doctype: article
 :page-title: PlantUML Templates - Issues with Processing
-:page-tags: [ howto, PlantUML, ascii, adoc, diagrams, ascii-diagram, includes, Azure-PlantUML, TravisCI, cannot_open_url]
+:page-tags: [ howto, plantuml, ascii, adoc, diagrams, ascii-diagram, includes, azure-plantuml, travisci, cannot_open_url]
 :sectanchors:
 :sectlinks:
 :toc:

@@ -3,7 +3,7 @@
 :page-created-date: 2021-03-04
 :page-doctype: article
 :page-title: Test Document
-:page-tags: [test, JetBrains, IntelliJ, PyCharm, WebStorm, DataGrip]
+:page-tags: [test, jetbrains, intellij, pycharm, webstorm, datagrip]
 :sectanchors:
 :sectlinks:
 :toc:
