@@ -4,7 +4,7 @@
     <title>Life</title>
     <link href="/atom.xml" rel="self"/>
     <link href="https://life.wijesundara.org/"/>
-    <updated>2021-03-21T16:00:17+00:00</updated>
+    <updated>2021-03-21T23:36:34+00:00</updated>
     <id>https://life.wijesundara.org</id>
     <author>
         <name>Isuru Wijesundara</name>
@@ -165,6 +165,29 @@ devices --&amp;gt; tripDataEventHub
 fareDataEventHub --&amp;gt; streamAnalytics
 tripDataEventHub --&amp;gt; streamAnalytics
 streamAnalytics --&amp;gt; outputCosmosDb&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;Failed to generate image: Broken pipe
+@startmindmap
+skinparam monochrome true
++ OS
+++ Ubuntu
++++ Linux Mint
++++ Kubuntu
++++ Lubuntu
++++ KDE Neon
+++ LMDE
+++ SolydXK
+++ SteamOS
+++ Raspbian
+-- Windows 95
+-- Windows 98
+-- Windows NT
+--- Windows 8
+--- Windows 10
+@endmindmap&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
