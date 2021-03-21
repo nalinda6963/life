@@ -86,7 +86,7 @@ permalink: pretty
 
 plugins:
   - jekyll-seo-tag
-  - jemoji
+#  - jemoji
 #  - jekyll-feed
 
 tags:
