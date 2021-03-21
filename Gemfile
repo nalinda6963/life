@@ -14,7 +14,7 @@ gem 'jemoji', '~> 0.12'
 
 group :jekyll_plugins do
   gem 'asciidoctor-diagram', '~> 2.0'
-  gem 'jekyll-asciidoc', '~> 2.1'
+  gem 'jekyll-asciidoc', '~> 3.0'
   gem 'jekyll-paginate', '~> 1.1'
   gem "jekyll-last-modified-at", '~> 1.1'
 end
