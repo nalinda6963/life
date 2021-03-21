@@ -1,5 +1,5 @@
 :imagesdir: images
-:pdf-page-layout: page
+:page-layout: page
 :page-excerpt: This is a short summary of the document, which will showcase under the title in some pages.
 :page-created-date: 2021-03-04
 :page-doctype: article
