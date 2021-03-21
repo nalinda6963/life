@@ -176,6 +176,29 @@ tripDataEventHub --> streamAnalytics
 streamAnalytics --> outputCosmosDb
 ----
 
+[plantuml, edr-test, svg]
+----
+@startmindmap
+skinparam monochrome true
++ OS
+++ Ubuntu
++++ Linux Mint
++++ Kubuntu
++++ Lubuntu
++++ KDE Neon
+++ LMDE
+++ SolydXK
+++ SteamOS
+++ Raspbian
+-- Windows 95
+-- Windows 98
+-- Windows NT
+--- Windows 8
+--- Windows 10
+@endmindmap
+
+----
+
 == Testing emojis
 
 There are 5 thumbsups: :+1:! :+1:, :thumbsup:, :thumbsup:, :thumbs_up:
