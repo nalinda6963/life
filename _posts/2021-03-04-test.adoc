@@ -176,7 +176,7 @@ tripDataEventHub --> streamAnalytics
 streamAnalytics --> outputCosmosDb
 ----
 
-[plantuml, edr-test, svg]
+[plantuml, mindmap, svg]
 ----
 @startmindmap
 skinparam monochrome true
