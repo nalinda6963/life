@@ -3,7 +3,7 @@
 :page-created-date: 2021-03-19
 :page-doctype: article
 :page-title: Azure KeyVault
-:page-tags: [azure, keyvault, cloud, cloud-platform-setup, secret-management, devops]
+:page-tags: [azure, keyvault, cloud, cloud-platform-setup, secret-management, devops, powershell, macos]
 :sectanchors:
 :sectlinks:
 :toc:
@@ -35,6 +35,16 @@ For more available commands refer to the https://docs.microsoft.com/en-us/cli/az
 == How to bulk insert secrets in to Azure KeyVault
 If you want to quickly bulk insert secrets in to a KeyVault, you can use following bulk insert with a csv file input. In the production and even in the lower environment, I highly encourage anyone to fully automate this process with `Terraform` and CI/CD.
 
+.Install powershell on macOS
+[source, bash]
+brew install --cask powershell
+
+Powershell on macOS https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-7.1[Microsoft documentation].
+
+.Start Powershell
+[source, bash]
+pwsh
+
 .Install az moule with in poweshell
 [source, powershell]
 install-module az -force -scope currentuser
@@ -42,6 +52,8 @@ install-module az -force -scope currentuser
 .Sign in to the account
 [source, powershell]
 connect-azaccount
+
+This will open up Azure web SignIn experience.
 
 .Bulck insert secrets
 [source, powershell]
