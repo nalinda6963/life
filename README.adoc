@@ -8,8 +8,8 @@
 :sectlinks:
 :toc:
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/nalinda6963/life/tree/develop.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/nalinda6963/life/tree/develop)
-
 = Life
 
 Notes, lessons-learned, wisdom, travel-logs, hobbies, sports and all other life experiences of a Husband, Father, and a Techie.
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/nalinda6963/life/tree/develop.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/nalinda6963/life/tree/develop)
