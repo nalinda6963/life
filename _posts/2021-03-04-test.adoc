@@ -19,6 +19,7 @@ Cura is a free slicing software. Besides the fact this is free, Cura is one of t
 
 === Test level 3 title
 Cura is a free slicing software. Besides the fact this is free, Cura is one of the best slicing software options in the industry. It is necessary to have the right profile, matching your printer, loaded to get the best printing experience. The latest version of cura can be downloaded from https://ultimaker.com/software/ultimaker-cura[here].
+Adding some words and committing to test CI/CD.
 
 [plantuml, plantuml-example-2, svg]
 ----
