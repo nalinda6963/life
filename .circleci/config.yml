@@ -2,6 +2,17 @@
 # See: https://circleci.com/docs/configuration-reference
 version: 2.1
 
+workflows:
+  lifeSite-build-deploy:
+    jobs:
+      - build
+      # - deploy:
+      #     requires:
+      #       - build
+      #     filters:
+      #       branches:
+      #         only: develop
+
 # Orbs are reusable packages of CircleCI configuration that you may share across projects, enabling you to create encapsulated, parameterized commands, jobs, and executors that can be used across multiple projects.
 # See: https://circleci.com/docs/orb-intro/
 orbs:
@@ -16,15 +27,33 @@ jobs:
     executor: ruby/default
     steps:
       - checkout
+      # - restore_cache:
+      #     keys:
+      #       - rubygems-v1-{{ checksum "Gemfile.lock" }}
+      #       - rubygems-v1-fallback
+      # - run:
+      #     name: Bundle Install
+      #     command: bundle check || bundle install
+      # - save_cache:
+      #     key: rubygems-v1-{{ checksum "Gemfile.lock" }}
+      #     paths:
+      #       - vendor/bundle
       - run:
-          name: Which bundler?
-          command: bundle exec jekyll build && bundle exec rake deploy
+          name: Jekyll build
+          command: bundle exec jekyll build
+      - run:
+          name: HTMLProofer tests
+          command: |
+            bundle exec htmlproofer ./_site \
+              --allow-hash-href \
+              --check-favicon  \
+              --check-html \
+              --disable-external
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - _site
+      - run:
+          name: Push to GitHub
+          command: bundle exec rake deploy
       - ruby/install-deps
-
-# Orchestrate jobs using workflows
-# See: https://circleci.com/docs/configuration-reference/#workflows
-workflows:
-  sample: # This is the name of the workflow, feel free to change it to better match your workflow.
-    # Inside the workflow, you define the jobs you want to run.
-    jobs:
-      - build
