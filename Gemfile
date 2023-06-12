@@ -13,6 +13,7 @@ gem 'jekyll-seo-tag', '~> 2.7'
 # gem 'nokogiri', '~> 1.11'
 gem 'jemoji', '~> 0.12'
 # gem 'jekyll-feed', '~> 0.15'
+gem 'html-proofer'
 
 group :jekyll_plugins do
   gem 'asciidoctor-diagram', '~> 2.0'
