@@ -1,18 +1,17 @@
 workflows:
   test-deploy:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
       - deploy:
           requires:
             - build
           filters:
             branches:
               only: develop
-      - checkout:
-          filters:
-            branches:
-              ignore:
-                - gh-pages
       - deploy:
           filters:
             branches:
