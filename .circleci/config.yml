@@ -36,7 +36,7 @@ jobs:
             - vendor/bundle
       - run:
           name: Jekyll build
-          command: rake deploy
+          command: JEKYLL_ENV=production bundle exec jekyll build
       - persist_to_workspace:
           root: ./
           paths:
