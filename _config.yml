@@ -3,8 +3,8 @@ title:               Life
 tagline:             'Life of a Techie'
 description:         'Notes, lessons-learned, wisdom, travel-logs, hobbies, sports and all other life experiences of a Husband, Father, and a Techie.'
 # comment the remote url for local developments
-#url:                  https://life.wijesundara.org
-url:                 http://localhost:4000
+url:                  https://life.wijesundara.org
+#url:                 http://localhost:4000
 
 google_analytics_id: G-W54HLV2XHH
 
