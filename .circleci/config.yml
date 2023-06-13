@@ -11,12 +11,9 @@ workflows:
             - build
           filters:
             branches:
-              only: develop
-      - deploy:
-          filters:
-            branches:
               only:
                 - develop
+
 version: 2.1
 jobs:
   build:
@@ -42,13 +39,15 @@ jobs:
           command: bundle exec jekyll build
       - persist_to_workspace:
           root: ./
-          paths:
-            - _site
+#          paths:
+#            - _site
   deploy:
     docker:
       - image: cimg/ruby:2.7.4
 
     steps:
+      - attach_workspace:
+          at: ./
       - restore_cache:
           keys:
             - v1-assets-{{ .Environment.CIRCLE_SHA1 }}
