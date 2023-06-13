@@ -1,5 +1,5 @@
 workflows:
-  test-deploy:
+  life-build-deploy:
     jobs:
       - build:
           filters:
@@ -36,11 +36,13 @@ jobs:
             - vendor/bundle
       - run:
           name: Jekyll build
-          command: bundle exec jekyll build
+          command: rake deploy
       - persist_to_workspace:
           root: ./
           paths:
-            - ~/repo
+            - _site
+            - .git
+            - .gitignore
   deploy:
     docker:
       - image: cimg/ruby:2.7.4
